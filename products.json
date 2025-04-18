@@ -1,0 +1,4787 @@
+[
+  {
+    "name": "Blue Bird Baking Soda 100gm",
+    "price": 24.3,
+    "category": "BAKING SODA"
+  },
+  {
+    "name": "Canz Bamboo Shoots 425gm",
+    "price": 110.0,
+    "category": "BAMBOO SHOOTS"
+  },
+  {
+    "name": "Disano Black Olives Sliced 230gm",
+    "price": 160.0,
+    "category": "BLACK OILVES"
+  },
+  {
+    "name": "Euro Gold Black Oilves Slice 2.84kg",
+    "price": 820.0,
+    "category": "BLACK OILVES"
+  },
+  {
+    "name": "GC Blue Curacao 750ml",
+    "price": 250.0,
+    "category": "BLUE CURACAO"
+  },
+  {
+    "name": "GC Button Mushroom Tandoori 800gm",
+    "price": 150.0,
+    "category": "BUTTON MUSHROOM"
+  },
+  {
+    "name": "Fresh2Go Wrap 10 inch",
+    "price": 140.0,
+    "category": "Bread"
+  },
+  {
+    "name": "Fresh2Go Wrap 8 inch",
+    "price": 90.0,
+    "category": "Bread"
+  },
+  {
+    "name": "Malabar Parota FR",
+    "price": 130.0,
+    "category": "Bread"
+  },
+  {
+    "name": "One Dream Tortilla 8 inch",
+    "price": 80.0,
+    "category": "Bread"
+  },
+  {
+    "name": "Take and Bake Tortilla Whole Wheat 10 Inch",
+    "price": 160.0,
+    "category": "Bread"
+  },
+  {
+    "name": "President Mozzarella Cheese Slice 765gm",
+    "price": 350.0,
+    "category": "CHEESE SLICE"
+  },
+  {
+    "name": "Moi Soi Korean Chilli Oil 175gm",
+    "price": 280.0,
+    "category": "CHILLI OIL"
+  },
+  {
+    "name": "Moi Soi Sichuan Chilli Oil 175gm",
+    "price": 224.0,
+    "category": "CHILLI OIL"
+  },
+  {
+    "name": "Blue Bried Chocolate Mousse 100gm",
+    "price": 70.0,
+    "category": "CHOCOLATE MOUSSE"
+  },
+  {
+    "name": "CS CoCo Hazelnut 100gm",
+    "price": 153.0,
+    "category": "COCOPOWDER"
+  },
+  {
+    "name": "Hersheys Cocoa Powder 225gm",
+    "price": 295.0,
+    "category": "COCOPOWDER"
+  },
+  {
+    "name": "GC Corn Flakes 500gm",
+    "price": 110.0,
+    "category": "CORN FLAKES"
+  },
+  {
+    "name": "Malas Blueberry Crush 1ltr",
+    "price": 450.0,
+    "category": "CRUSH"
+  },
+  {
+    "name": "Malas Green Apple Crush 1ltr",
+    "price": 230.0,
+    "category": "CRUSH"
+  },
+  {
+    "name": "Malas Guava Crush 1ltr",
+    "price": 216.0,
+    "category": "CRUSH"
+  },
+  {
+    "name": "Malas Kiwi Crush 1ltr",
+    "price": 252.0,
+    "category": "CRUSH"
+  },
+  {
+    "name": "Malas Litchi Crush 1ltr",
+    "price": 216.0,
+    "category": "CRUSH"
+  },
+  {
+    "name": "Malas Mango Crush 1ltr",
+    "price": 216.0,
+    "category": "CRUSH"
+  },
+  {
+    "name": "Malas Orange Crush 1ltr",
+    "price": 216.0,
+    "category": "CRUSH"
+  },
+  {
+    "name": "Malas Strawberry Crush 1ltr",
+    "price": 240.0,
+    "category": "CRUSH"
+  },
+  {
+    "name": "Manama Black Current Crush 1Ltr",
+    "price": 216.0,
+    "category": "CRUSH"
+  },
+  {
+    "name": "Manama Mango Crush 1ltr",
+    "price": 216.0,
+    "category": "CRUSH"
+  },
+  {
+    "name": "Malas Butterscotch Crush 1ltr",
+    "price": 216.0,
+    "category": "CURSH"
+  },
+  {
+    "name": "Malas Jamun Crush 1ltr",
+    "price": 295.0,
+    "category": "CURSH"
+  },
+  {
+    "name": "Malas Pineapple Cursh 1ltr",
+    "price": 204.0,
+    "category": "CURSH"
+  },
+  {
+    "name": "GC Custard Powder 1kg",
+    "price": 120.0,
+    "category": "CUSTARD"
+  },
+  {
+    "name": "Hillers Custurd Powder 1kg",
+    "price": 120.0,
+    "category": "CUSTARD"
+  },
+  {
+    "name": "Chandel Tuna In Natural Spring Water 185 gm",
+    "price": 126.0,
+    "category": "Can"
+  },
+  {
+    "name": "GC Baked Beans 450 gm",
+    "price": 70.0,
+    "category": "Can"
+  },
+  {
+    "name": "GC Cream Style Corn 850 gm",
+    "price": 85.0,
+    "category": "Can"
+  },
+  {
+    "name": "GC Gherkins 670 gm",
+    "price": 100.0,
+    "category": "Can"
+  },
+  {
+    "name": "GC Jalapeno Slice 3kg",
+    "price": 340.0,
+    "category": "Can"
+  },
+  {
+    "name": "GC RED PAPRIKA SLICES 3 KG",
+    "price": 350.0,
+    "category": "Can"
+  },
+  {
+    "name": "GC Tuna In Oil 180gm",
+    "price": 110.0,
+    "category": "Can"
+  },
+  {
+    "name": "Gochujang Red Pepper Paste Voila 500 gm",
+    "price": 360.0,
+    "category": "Can"
+  },
+  {
+    "name": "Habit Black Olives Pitted 2.8 kg",
+    "price": 800.0,
+    "category": "Can"
+  },
+  {
+    "name": "Habit Black Olives Slice 3 kg",
+    "price": 820.0,
+    "category": "Can"
+  },
+  {
+    "name": "Habit Fruit Cocktail 850 gm",
+    "price": 140.0,
+    "category": "Can"
+  },
+  {
+    "name": "Habit Peeled Tomato 2.55kg",
+    "price": 340.0,
+    "category": "Can"
+  },
+  {
+    "name": "How How Rice Stick 5 mm",
+    "price": 140.0,
+    "category": "Can"
+  },
+  {
+    "name": "Item 1",
+    "price": 480.0,
+    "category": "Can"
+  },
+  {
+    "name": "Laxmiraj Mixed Pickle 200 gm",
+    "price": 50.0,
+    "category": "Can"
+  },
+  {
+    "name": "Malas Very Berry Crush 750 ml",
+    "price": 180.0,
+    "category": "Can"
+  },
+  {
+    "name": "Nestle Milkmaid 380 gm",
+    "price": 145.0,
+    "category": "Can"
+  },
+  {
+    "name": "PC Balasmic Vinegar 500 ml",
+    "price": 324.99,
+    "category": "Can"
+  },
+  {
+    "name": "Sakura Gochujang Korean Chilli Paste 500gm",
+    "price": 360.0,
+    "category": "Can"
+  },
+  {
+    "name": "Sarwar Bamboo Shoots 560 gm",
+    "price": 130.0,
+    "category": "Can"
+  },
+  {
+    "name": "Sarwar Sundried Tomato 1 kg",
+    "price": 550.0,
+    "category": "Can"
+  },
+  {
+    "name": "Sarwar Water Chestnut in Water 567 gm",
+    "price": 123.18875,
+    "category": "Can"
+  },
+  {
+    "name": "Winn Choclate Sauce 1.3kg",
+    "price": 200.0,
+    "category": "Can"
+  },
+  {
+    "name": "Aditi Sweet Corn Kernel 425 gm",
+    "price": 60.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "Aditi Tomato Puree 850 gm",
+    "price": 60.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "Canz Bamboo Shoot 850 gm",
+    "price": 190.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "Canz Water Chestnut 507 gm",
+    "price": 140.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "GC Baby Corn 400 gm",
+    "price": 120.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "GC Baby Corn Brine 850gm",
+    "price": 125.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "GC Button Mushroom 800 gm",
+    "price": 140.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "GC Fruit Cocktail in Syrup 840 gm",
+    "price": 115.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "GC Jalapeno slice 670 gm",
+    "price": 100.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "GC Mango Pulp 850 gm",
+    "price": 260.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "GC Pine Apple Slice 840 gm",
+    "price": 110.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "GC Red Cherry 840 gm",
+    "price": 180.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "GC Sliced Mushroom 800 gm",
+    "price": 100.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "GC Sweet Corn Kernels 400 gm",
+    "price": 60.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "GC Tuna in Brine185 gm",
+    "price": 110.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "Habit Sweet Corn Kernel 410 gm",
+    "price": 65.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "Habit Totapuri Mango Pulp 3 kg",
+    "price": 350.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "Manegrow Canned Button Mushroom 800 gm",
+    "price": 140.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "TN White Meat Tuna In Sunflower Oil 185 gm",
+    "price": 190.0,
+    "category": "Can Product"
+  },
+  {
+    "name": "CB Chicken Cheese Samosa 1 kg",
+    "price": 480.0,
+    "category": "Chicken"
+  },
+  {
+    "name": "CB Chicken Hot and Cripsy Lollypop",
+    "price": 480.0,
+    "category": "Chicken"
+  },
+  {
+    "name": "QB Chicken Cutlet 1 kg",
+    "price": 460.0,
+    "category": "Chicken"
+  },
+  {
+    "name": "QB Chicken Meat Ball 1kg",
+    "price": 460.0,
+    "category": "Chicken"
+  },
+  {
+    "name": "QB Chicken Shahi Tandoori Kebab 1kg",
+    "price": 480.0,
+    "category": "Chicken"
+  },
+  {
+    "name": "Makino Jalapeno Nachos 200 gm",
+    "price": 80.0,
+    "category": "Chips"
+  },
+  {
+    "name": "Makino Peri Peri Nachos 200 gm",
+    "price": 90.0,
+    "category": "Chips"
+  },
+  {
+    "name": "Makino Rock Salt Nacho",
+    "price": 100.0,
+    "category": "Chips"
+  },
+  {
+    "name": "Salsalito Creamy Cheese Nacho 200 gm",
+    "price": 80.0,
+    "category": "Chips"
+  },
+  {
+    "name": "Salsalito Peri Peri Nacho 200 gm",
+    "price": 80.0,
+    "category": "Chips"
+  },
+  {
+    "name": "Delmonte Chocolate Syrup 1.2 kg",
+    "price": 250.0,
+    "category": "Chocolate"
+  },
+  {
+    "name": "Funfoods Chocolate Milk Spread 450gm",
+    "price": 231.57,
+    "category": "Chocolate"
+  },
+  {
+    "name": "Funfoods Chocolate Nut Spread 450gm",
+    "price": 224.1,
+    "category": "Chocolate"
+  },
+  {
+    "name": "GC Chocolate Syrup 1.3kg",
+    "price": 220.0,
+    "category": "Chocolate"
+  },
+  {
+    "name": "Hersheys Hot Chocolate 250 gm",
+    "price": 211.5,
+    "category": "Chocolate"
+  },
+  {
+    "name": "Morde Dark Compound (CO D15)",
+    "price": 165.0,
+    "category": "Chocolate"
+  },
+  {
+    "name": "Morde White Compound 400 gm",
+    "price": 190.0,
+    "category": "Chocolate"
+  },
+  {
+    "name": "Pickwick Chocolate Roll 300 gm",
+    "price": 170.0,
+    "category": "Chocolate"
+  },
+  {
+    "name": "Pickwick Strawberry Roll 300 gm",
+    "price": 170.0,
+    "category": "Chocolate"
+  },
+  {
+    "name": "Cuisinary Coconut Milk Powder 1kg",
+    "price": 650.0,
+    "category": "Coconut"
+  },
+  {
+    "name": "Epicures Coconut Milk 400ml",
+    "price": 110.0,
+    "category": "Coconut"
+  },
+  {
+    "name": "GC Coconut Milk 400ml",
+    "price": 110.0,
+    "category": "Coconut"
+  },
+  {
+    "name": "Habit Coconut Milk 400ml",
+    "price": 120.0,
+    "category": "Coconut"
+  },
+  {
+    "name": "Continental Speciale Coffee Sachet",
+    "price": 90.0,
+    "category": "Coffee"
+  },
+  {
+    "name": "Continental Strong Coffee 1 kg",
+    "price": 850.0,
+    "category": "Coffee"
+  },
+  {
+    "name": "Continental Strong Coffee 200gm",
+    "price": 175.0,
+    "category": "Coffee"
+  },
+  {
+    "name": "Continental Xtra Coffee Sachet",
+    "price": 280.0,
+    "category": "Coffee"
+  },
+  {
+    "name": "Nescafe Coffee Sachet Mrp 120",
+    "price": 115.0033333333333,
+    "category": "Coffee"
+  },
+  {
+    "name": "SFP Chicken Black Pepper Sausages 500 gm",
+    "price": 220.0,
+    "category": "Cold Cut"
+  },
+  {
+    "name": "Blue Bird Instant Dry Yeast 20gm",
+    "price": 32.4,
+    "category": "DRY YEAST"
+  },
+  {
+    "name": "Amul Butter 500 gm Cp",
+    "price": 590.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Amul Cheese Chiplet 25 gm",
+    "price": 610.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Amul Cheese Cubes 1 kg (40*25gm)",
+    "price": 600.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Amul Cheese Slice 750 gm Mrp 440",
+    "price": 430.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Amul Diced Mozzarella 1 kg",
+    "price": 495.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Amul Fresh Cream 250 ml",
+    "price": 65.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Amul Fresh Cream1 Ltr",
+    "price": 220.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Amul Mozzarella Blend 1kg",
+    "price": 510.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Amul Processed Cheese Block 1 kg",
+    "price": 555.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Amul Processed Cheese ETG Block 1 kg",
+    "price": 555.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Amul Tazza Fresh Milk 1 ltr",
+    "price": 74.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Arla White Feta Cheese 500 Gm",
+    "price": 420.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Britannia Mozzarella Blend 1 kg",
+    "price": 500.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Britannia Slice 765 Gm",
+    "price": 400.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Cheese Cubes 25 gm Pc",
+    "price": 16.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Cheese Slice Go White 800 gm",
+    "price": 440.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "DAIRY LANE DAHI POUCH 1 KG",
+    "price": 80.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "DL Cow Ghee 1 ltr",
+    "price": 700.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "DL Cow Ghee 200 ml",
+    "price": 170.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "DL Cow Ghee 500 ml",
+    "price": 350.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Derista Cheese Slice pcs",
+    "price": 10.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Derista Easy Grate Cheese 1 kg",
+    "price": 520.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Derista Filler Cheese 500 gm",
+    "price": 190.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Derista Mozarella Cheese 1 kg",
+    "price": 520.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Derista Processed Cheese Slice 780gm",
+    "price": 385.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Derista Sandwich Slice 52",
+    "price": 370.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Dlecta Cheese Sauce Yellow 1 Kg Mrp 590",
+    "price": 560.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Dlecta Cream Cheese 1 kg",
+    "price": 830.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Ghee 200 ml",
+    "price": 140.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Kesari Mangal Ghee 1kg",
+    "price": 580.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Kesari Mangal Ghee 500gm",
+    "price": 300.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Madhusudan Fresh Cream 1 ltr",
+    "price": 200.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Malai Paneer",
+    "price": 512.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Mawa Fresh1 Kg",
+    "price": 360.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Milk TH 5 kg",
+    "price": 440.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Milky Mist Cheese Block 1 kg",
+    "price": 520.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Milky Mist Mozzarella cheese Diced 2 kg",
+    "price": 1050.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Mori-Nu Silken Tofu Firm Regular 349 gm",
+    "price": 325.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Nandini Mozarella Blend Cheese 1 kg",
+    "price": 500.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Nandini Mozzrella Diced 1 Kg",
+    "price": 480.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Nandini Processed Cheese Block 1kg",
+    "price": 510.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Nandini Slice Cheese 750 gm",
+    "price": 375.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Nut Delight Fat Spread Butter 500 gm",
+    "price": 90.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Nutralite Analogue Cheese 1 kg Mrp 450",
+    "price": 340.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Nutralite Fat Spread 500 gm",
+    "price": 100.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Paneer Fresh",
+    "price": 280.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "President Cheese Slice Cheddar 765 gm",
+    "price": 400.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Pristine Cooking Creme",
+    "price": 190.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Qualita Special Cheese Block 1 kg",
+    "price": 360.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Rich Cooking Rich Hot 1kg",
+    "price": 240.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "SF White Feta Cheese 500gm",
+    "price": 420.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Tofu Paneer Fresh",
+    "price": 80.0,
+    "category": "Dairy Product"
+  },
+  {
+    "name": "Al Ameera Tahina Paste 1 Kg",
+    "price": 950.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "American Garden Yellow Mustard 227gm",
+    "price": 200.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Caterstar Veg Deligt Mayonnaise 1KG",
+    "price": 85.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Chilzo Jain Pizza Pasta Sauce 1 kg",
+    "price": 330.6466666666667,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cremica Caesar Dressing DIP 350gm",
+    "price": 180.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cremica Cheese Sandwich Spread 275gm",
+    "price": 103.5,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cremica Chipotle Sandwich Spread 275gm",
+    "price": 103.5,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cremica Classic Sandwich Spread 275gm",
+    "price": 103.5,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cremica Italian Dreesing Dip 350gm",
+    "price": 166.5,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cremica Mint Sandwich Spread 275gm",
+    "price": 97.75,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cremica Piri Piri Sandwich Spread 275gm",
+    "price": 103.5,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cremica Russian Dressing Dip 350gm",
+    "price": 195.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cremica Southwest Dressing 350gm",
+    "price": 166.5,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cremica Tartar Sauce 275gm",
+    "price": 115.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cremica Thousand Island Dip 350gm",
+    "price": 170.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cremica Tomato Ketchup 900 gm",
+    "price": 90.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cremica Tomato Ketchup Sachet 8 gm",
+    "price": 80.002,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cremica Vinaigrette Dressing Dip 350gm",
+    "price": 166.5,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cuisinary Bhoot Jolokia Sauce",
+    "price": 150.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cuisinary Garlic Mayonnaise 1 kg",
+    "price": 180.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cuisinary Pizza Pasta Sauce 1 kg",
+    "price": 180.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Cuisinary Smoky Barbeque Sauce 1kg",
+    "price": 180.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Delmonte Creamy Cheese 1 kg",
+    "price": 190.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Delmonte Ketchup Classic Blend 900 gm",
+    "price": 110.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Delmonte Mayonnaise 1kg",
+    "price": 190.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Delmonte Pizza Pasta Sauce 1 kg",
+    "price": 190.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Delmonte Tomato Ketchup Sachet",
+    "price": 100.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Ferns Biryani Paste 190 gm",
+    "price": 127.2,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Ferns Butter Chicken Curry Paste 190 gm",
+    "price": 120.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Ferns Garlic Pickle 190 gm",
+    "price": 74.5,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Flying Goose Sriracha Hot Chilli Sauce 730ml",
+    "price": 464.99,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Foodrite Schezwan Sauce Sachet",
+    "price": 170.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Foodrite Tomato Sachets (Meal Time)",
+    "price": 80.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Freshos Dijon Mustard Paste 370gm",
+    "price": 200.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Freshos Peanut Butter Creamy 510gm",
+    "price": 140.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Funfoods Barbeque Sauce 1 kg",
+    "price": 190.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Funfoods Burger Mayonnaise 1 kg",
+    "price": 220.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Funfoods Cheese Dressing 1 kg",
+    "price": 210.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Funfoods Chipotle Mayonnaise 1 kg",
+    "price": 230.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Funfoods Garlic Chilli Sauce 1 kg",
+    "price": 180.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Funfoods Honey Mustard 1 kg",
+    "price": 210.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Funfoods Jalapeno Cheese Dressing 1 kg",
+    "price": 200.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Funfoods Mild &amp; Sweet Mayo 1 KG",
+    "price": 120.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Funfoods Pasta and Pizza Sauce 1 kg",
+    "price": 190.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Funfoods Peri Peri Mayonnaise 1 kg",
+    "price": 230.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Funfoods Salad Mayonnaise 1 kg",
+    "price": 120.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Funfoods Thousand Island 1 kg",
+    "price": 210.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Funfoods Veg Mayonnaise for Coleslaw 1 kg",
+    "price": 160.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Funfoods Veg Tandoori Mayonnaise 1 kg",
+    "price": 235.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "GC Ginger Garlic Paste 1 kg",
+    "price": 130.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "GC Kasundi Mustard 1 kg",
+    "price": 120.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "GC Lime juice 250ml",
+    "price": 55.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "GC Red Paprika 680 gm",
+    "price": 130.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "GC Rose Water 500 ml",
+    "price": 50.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "GC Schezwan Chutney 1kg",
+    "price": 150.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "GC Schezwan Chutney 250gm",
+    "price": 70.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "GC Tomato Ketchup 1kg",
+    "price": 90.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Habanero Cheddar Cheese Dip 300gm",
+    "price": 254.15,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Habanero Cheese Jalapeno Dip 300gm",
+    "price": 270.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Habanero Hot Sauce 100gm",
+    "price": 151.2,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Habit Tomato Ketchup 950 gm",
+    "price": 0.9,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Hersheys Caramel Syrup 623 ml",
+    "price": 230.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Hillers Tomato Dip Sauce 950 gm",
+    "price": 80.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Hillers Tomato Ketchup 5 kg",
+    "price": 250.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Hillers Tomato Ketchup Pouch 950gm",
+    "price": 80.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "KAI Sriracha Hot Chilli Sauce 770 gm",
+    "price": 550.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Kissan",
+    "price": 90.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Kissan Dip Sauce 930 gm",
+    "price": 90.005,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Kissan Fresh Tomato Ketchup 2 kg",
+    "price": 220.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "LKK Plum Sauce 260gm",
+    "price": 250.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Magic King Schezwan Stir Fry 1kg",
+    "price": 130.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Malas Mixed Fruit Jam 1kg",
+    "price": 162.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Malas Mixed Fruit Jam 500 gm",
+    "price": 121.5,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Malas Tomato Ketchup 450gm",
+    "price": 50.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Meal Time Chocolate Delight Sauce 1 ltr",
+    "price": 210.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Meal Time Chocolate Dressing 1.3 Kg",
+    "price": 180.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Meal Time Veg Mayonnaise Salad 1 kg",
+    "price": 100.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Moi Soi Thai Green CUrry 300gm",
+    "price": 210.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Moi Soi Thai Red Curry 300gm",
+    "price": 200.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Noriko Kimchi Sauce 1ltr",
+    "price": 850.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Nutella Cocoa Spread 350 gm",
+    "price": 380.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Nutella Cocoa Spread 750 gm",
+    "price": 720.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "PRB Oyester Sauce 510gm",
+    "price": 170.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "PRB Oyster Sauce 2.27kg",
+    "price": 570.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Real Thai Sriracha Extra Hot Chilli Sauce 430 ml",
+    "price": 314.14,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "THS Hot Sriracha Sauce 500ml",
+    "price": 200.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba  Garlic Mayo 250 gm",
+    "price": 98.1,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba American Mustard 320 gm",
+    "price": 152.1,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Barbeque Sauce 1 kg",
+    "price": 190.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Barbeque Sauce 330 gm",
+    "price": 152.1,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Burger Mayo 250 gm",
+    "price": 90.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Ceasar Dressing 300gm",
+    "price": 170.1,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Cheese &amp;Jalapeno Dip 1 kg",
+    "price": 200.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Cheesy Pasta Sauce 250gm",
+    "price": 105.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Chilli Garlic Spread 1 kg",
+    "price": 190.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Chilli Oregano Sauce 350gm",
+    "price": 150.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Chipotle Dressing 300 gm",
+    "price": 170.1,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Chipotle Style Dressing 1 kg",
+    "price": 235.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Classic Mayo with Egg 250 gm",
+    "price": 100.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Eggless Mayo 250 gm",
+    "price": 107.1,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Harissa Chilli-Cumin Dressing 300 gm",
+    "price": 209.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Honey Mustard dressing 330gm",
+    "price": 186.15,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Makhani Gravy 1 kg",
+    "price": 240.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Mayonnaise Professional 1 kg",
+    "price": 120.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Mexican Style Dressing 1 kg",
+    "price": 220.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Mint Mayonnaise 1 kg",
+    "price": 250.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Mint Mayonnaise 300gm",
+    "price": 170.1,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Olive Oil Mayonnaise 300 gm",
+    "price": 197.1,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Peri Peri Sauce 300 gm",
+    "price": 157.5,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Pizza & Pasta Sauce 280gm",
+    "price": 89.1,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Pizza &amp; Pasta Sacue 1 kg",
+    "price": 200.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Pizza Pasta No Onion No Garlic Sauce 280gm",
+    "price": 98.1,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Pizza Topping Creamy Tomato 1 kg",
+    "price": 195.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Ranch Dressing  300gm",
+    "price": 197.1,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Salsa 1 kg",
+    "price": 160.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Salsa Sauce 360 gm",
+    "price": 140.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Sandwich Thousand Island Spread 250gm",
+    "price": 100.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Sweet Chilli Sauce 350gm",
+    "price": 155.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Sweet Onion Sauce 350 gm",
+    "price": 152.1,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Tandoori Mayo 250 gm",
+    "price": 98.1,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Tandoori Mayonnaise 1 kg",
+    "price": 235.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Thousand Island 300gm",
+    "price": 169.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Veg Smart Mayonnaise 250gm",
+    "price": 98.1,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba White Cheese Dressing 1 kg",
+    "price": 200.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Veeba Zesty Dressing 1 kg",
+    "price": 240.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "WG Burger Mayo 1kg",
+    "price": 170.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "WG Cheesy Jalapeno Sauce 1kg",
+    "price": 190.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "WG Chipotle Mayo Pouch 180 gm",
+    "price": 70.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "WG Classic Chilli Garlic Sauce 1kg",
+    "price": 169.9933333333333,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "WG Fiery Mustard 180 gm",
+    "price": 110.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "WG Mexican Salsa Sauce 1kg",
+    "price": 125.005,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "WG Pizza Pasta Sauce 1kg",
+    "price": 150.0016666666667,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "WG Pizza Pasta Sauce Pouch 180 gm",
+    "price": 108.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "WG Premium Pizza Pasta 1kg",
+    "price": 190.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "WG Premium Veg Mayo 800 gm",
+    "price": 140.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "WG Premium Veg Mayo Pouch 180 gm",
+    "price": 70.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "WG Tandoori Mayo 1kg",
+    "price": 210.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "WG Tandoori Mayo Pouch 180 gm",
+    "price": 70.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "WG Thousand Island Dressing 1kg",
+    "price": 180.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "WG Thousand Island Pouch 180 gm",
+    "price": 75.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "WG Tomato Ketchup 450 gm",
+    "price": 80.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "WG cheesy Sauce 1kg",
+    "price": 160.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Winn Chilli Sauce 690gm",
+    "price": 50.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Winn Dark Soya Sauce 700gm",
+    "price": 50.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Winn Green Chilli Sauce 690gm",
+    "price": 45.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Winn Tomato Ketchup No Onion No Garlic 1kg",
+    "price": 90.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Yokoso Wasabi Powder 1 kg",
+    "price": 950.0,
+    "category": "Dips and Sauces"
+  },
+  {
+    "name": "Shitake Mushroom 1 kg",
+    "price": 2000.0,
+    "category": "Dried Mushroom"
+  },
+  {
+    "name": "Shitake Mushroom Fr 50 gm",
+    "price": 90.0,
+    "category": "Dried Mushroom"
+  },
+  {
+    "name": "CB Paneer Cheese Samosa 1 kg",
+    "price": 480.0,
+    "category": "FROZEN VEG"
+  },
+  {
+    "name": "CB Paneer Peri Peri Cheese Samosa 1 kg",
+    "price": 480.0,
+    "category": "FROZEN VEG"
+  },
+  {
+    "name": "HyFun Herbs Burger Ptty 1.5kg",
+    "price": 300.0,
+    "category": "FROZEN VEG"
+  },
+  {
+    "name": "Iscon Balaji Potato Wedge 2.5kg",
+    "price": 479.9979999999999,
+    "category": "FROZEN VEG"
+  },
+  {
+    "name": "Yumway French Fries 9 MM",
+    "price": 400.0,
+    "category": "FROZEN VEG"
+  },
+  {
+    "name": "Foodea Fried Onion 1kg",
+    "price": 240.0,
+    "category": "FRY ONION"
+  },
+  {
+    "name": "Chefys Vanilla Frappe Mix 1Kg",
+    "price": 450.005,
+    "category": "Frappe"
+  },
+  {
+    "name": "Iscon Balaji Crinkle Cut French Fries 2kg",
+    "price": 380.0,
+    "category": "French Fries"
+  },
+  {
+    "name": "Delicious Chicken Breakfast Sausaugs 1kg",
+    "price": 350.0,
+    "category": "Fridge"
+  },
+  {
+    "name": "AF Chicken Malai Seek Kabab 1kg",
+    "price": 380.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "AF Chicken Pudina Seek Kabab 1kg",
+    "price": 380.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "AF Hot Garlic Chicken Seek Kabab 1kg",
+    "price": 380.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Amul blister Butter 1kg",
+    "price": 620.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "CTP",
+    "price": 350.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Chicken Samosa DL 1 kg",
+    "price": 450.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Chicken Schezwan Momo",
+    "price": 200.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Chilli Fill Aloo Tikki 1.5kg",
+    "price": 300.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Chilli Fill French Fries 2.5kg 6mm",
+    "price": 300.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Chilli Fill French Fries 2.5kg 9mm",
+    "price": 450.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Chilli Fill Potato Cheese Shots 1kg",
+    "price": 440.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Chilli Fill Potato Wedges 2.5kg",
+    "price": 490.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Delicious Chicken Burger Patty SP 1 Kg",
+    "price": 320.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Delicious Chicken Cheese Popcorn 900gm",
+    "price": 430.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Delicious Chicken Crunchy Munchy 1 kg",
+    "price": 470.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Delicious Chicken Nugget 1 kg",
+    "price": 380.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Delicious Chicken Popons SS 1 kg",
+    "price": 370.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Delicious Chicken Sausages 1 kg",
+    "price": 350.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Delicious Chicken Spring Roll 1 kg",
+    "price": 440.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Delicious Coated Chicken Wings 1kg",
+    "price": 450.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Edamame without Shell 500 gm",
+    "price": 350.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Frozen Lotus Root Slice 1kg",
+    "price": 700.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Frozen Strawberry Pulp 1 kg",
+    "price": 200.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Frozen Whole Strawbeery 1Kg",
+    "price": 200.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "GF Chicken Burger Patty 1kg",
+    "price": 320.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "GF Coated Hariyali Kebab 1kg",
+    "price": 280.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "GF Herbs Chilli Potato Patty 1.5kg",
+    "price": 280.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "GF Spicy Aloo Tikki 1.5kg",
+    "price": 260.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "GF Veg Burger Patty 1kg",
+    "price": 200.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Gadre Crab Claw 1 kg",
+    "price": 550.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Gadre Fish Burger Patty 1 kg",
+    "price": 650.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Gadre Fish Finger",
+    "price": 650.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Gadre Fish Fries 1 kg",
+    "price": 450.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Gadre Fish Lollipop Chatpata 1 kg",
+    "price": 540.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Gadre Surimi Crab Sticks 1 kg",
+    "price": 600.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "HyFun Burger Patty 1.2 kg",
+    "price": 240.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "HyFun Classic Potatoes Wedges 2.5 kg",
+    "price": 550.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "HyFun French Fries 2.5 kg 9mm",
+    "price": 500.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Hyfun Aloo Tikki 1.5 kg",
+    "price": 280.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Hyfun Chilly Garlic Potato Poppers 1.5kg",
+    "price": 300.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Hyfun French Fries 2.5 kg 6 mm",
+    "price": 380.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Hyfun Hash Browm 1.5 KG",
+    "price": 300.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Hyfun Sabudana Patty 1 kg",
+    "price": 260.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "ITC Cheese  Jalapeno Poppers 1 kg",
+    "price": 400.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "ITC Cheesy Corn Triangles 1 kg",
+    "price": 360.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "ITC Cheesy Pizza Fingers 1 kg",
+    "price": 400.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "ITC Chicken Burger Patty 1.5 kg",
+    "price": 510.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "ITC Chicken Fries 1 kg",
+    "price": 420.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "ITC Chicken Hot &amp; Spicy Patty 1 kg",
+    "price": 590.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "ITC Chicken Popcorn 1 kg",
+    "price": 380.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "ITC Crunchy Chicken Nuggets 1 kg",
+    "price": 380.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "ITC Lebanese Falafel Kabab 1KG",
+    "price": 320.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "ITC Onion Rings 500 gm",
+    "price": 250.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "ITC Paneer Patty 1.02 kg",
+    "price": 520.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "ITC Veg Burger Patty Regular 1 kg",
+    "price": 220.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "ITC Veggie Pizza Pockets 0.988 kg",
+    "price": 360.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Imported Basa Fish",
+    "price": 320.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Iscon Balaji Aloo Tikki 1.5kg",
+    "price": 280.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Iscon Balaji Chilli Garlic Potato Shot 1.5 kg",
+    "price": 300.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Iscon Balaji Crispy Veggie Fingers 1 kg",
+    "price": 280.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Iscon Balaji French Fries 6 mm",
+    "price": 330.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Iscon Balaji French Fries 9mm 2.5 kg",
+    "price": 350.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Iscon Balaji Giggles 1kg",
+    "price": 300.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Iscon Balaji Potato Cheese Shots 1 kg",
+    "price": 420.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Iscon Balaji Premimum Fries 1kg",
+    "price": 380.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Iscon Balaji Veg Burger Patty Decker 1.2 kg",
+    "price": 240.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Mix Veggies FR",
+    "price": 120.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Nutrich Boneless Fried Chicken 1 kg",
+    "price": 500.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Nutrich Chicken Breakfast Sausage 1kg",
+    "price": 350.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Nutrich Chicken Burger Patty 1 kg",
+    "price": 350.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Nutrich Chicken Cheese Ball 1kg",
+    "price": 440.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Nutrich Chicken Drumstick Coated 1 kg",
+    "price": 520.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Nutrich Chicken Fingers 1 kg",
+    "price": 380.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Nutrich Chicken Fried WIngs 1 kg",
+    "price": 480.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Nutrich Chicken Garlic Finger 1 kg",
+    "price": 420.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Nutrich Chicken Jumbo Burger Patty 1 kg",
+    "price": 360.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Nutrich Chicken Masala Nuggets 1 kg",
+    "price": 380.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Nutrich Chicken Nuggets 1 kg",
+    "price": 400.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Nutrich Chicken Popcorn 1 kg",
+    "price": 400.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Nutrich Chicken Strips 1kg",
+    "price": 500.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Nutrich Chicken Tandoori Burger 1 kg",
+    "price": 360.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Nutrich Chicken Tandoori Tikka 1kg",
+    "price": 580.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Nutrich Chicken WIngs Coated 1.2 kg",
+    "price": 520.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "PRAWNS 13/15 TAIL ON",
+    "price": 700.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "PRAWNS 16/20 TAIL ON",
+    "price": 750.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "PRAWNS 31/40 PD",
+    "price": 550.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "PRAWNS 31/40 TAIL ON",
+    "price": 600.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "QB Chicken Cheese Roll 1kg",
+    "price": 460.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "QB Chicken Lollypop 1kg",
+    "price": 470.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "QB Chicken Seekh Hariyali Kebab 1 kg",
+    "price": 460.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "QB Chicken Seekh Malai Kebab 1 kg",
+    "price": 470.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "QB Chicken Shami Kebab 1 kg",
+    "price": 480.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "QB Chicken Spicy Seekh Kebab 1kg",
+    "price": 460.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Barbeque Chicken Wings 1 KG",
+    "price": 450.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Chicken Bacon 500 gm",
+    "price": 330.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Chicken Chilly Garlic Sausages 500gm",
+    "price": 220.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Chicken Loaf Ham 500 gm",
+    "price": 220.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Chicken Pepperoni 500gm",
+    "price": 360.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Chicken Salami Plain 500 gm",
+    "price": 200.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Chicken Salami Smoked 500 gm",
+    "price": 220.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Chicken Samosa 500 gm",
+    "price": 220.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Chicken Sausages Cheese &amp; Jalapeno 500 gm",
+    "price": 250.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Chicken Sausages Cheese &amp;Onion 500 gm",
+    "price": 220.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Chicken Sausages Cheese and Pepper 500 gm",
+    "price": 220.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Chicken Smoked Franks Sausages 500gm",
+    "price": 220.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Chicken Smoked Hotdog 500 gm",
+    "price": 220.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Chicken Spicy Salami 500 gm",
+    "price": 220.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Chicken Spring Roll 500gm",
+    "price": 250.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Chicken Zing A Burger Patty 500gm",
+    "price": 250.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Plain Sausages 500 gm",
+    "price": 200.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Tandoori Pizza Topping 1 kg",
+    "price": 600.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "SFP Veg Spring Roll 500 gm",
+    "price": 240.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Switz Samosa Patti 500 gm",
+    "price": 110.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Switz Spring Roll 275 gm",
+    "price": 110.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Vadila Methi Paratha 400 gm",
+    "price": 135.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Vadilal Aloo Paratha 400 gm",
+    "price": 135.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Vadilal Cheese Chilli Garlic Naan 400 gm",
+    "price": 135.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Vadilal Onin Kulcha 400 gm",
+    "price": 135.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Vadilal Paneer Kulcha 400 gm",
+    "price": 171.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Vadilal Rumali Roti 240 gm",
+    "price": 117.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Veer Foods Chicken Malai Kabab 500gm",
+    "price": 250.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Veer Foods Chicken Piri Piri Seekh Kabab 500gm",
+    "price": 250.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "Veer Foods Mutton Seekh Kabab 500gm",
+    "price": 350.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "YUMMIES Potato Cheese Bites 1 kg",
+    "price": 400.0,
+    "category": "Frozen"
+  },
+  {
+    "name": "CB Chicken Cheese Roll 500 gm",
+    "price": 250.0,
+    "category": "Frozen Non Veg"
+  },
+  {
+    "name": "CB Chicken Honkong Lollypop 1 kg",
+    "price": 480.0,
+    "category": "Frozen Non Veg"
+  },
+  {
+    "name": "Blue Bird Gelatine 50gm",
+    "price": 90.0,
+    "category": "GELATINE"
+  },
+  {
+    "name": "Norika Gochujang Hot Pepper Paste 500gm",
+    "price": 390.0,
+    "category": "GOCHUJANG POWDER"
+  },
+  {
+    "name": "Cuisinary Onion Tomato Gravy 1kg",
+    "price": 140.0,
+    "category": "GRAVY"
+  },
+  {
+    "name": "Cuisinary White Gravy 1kg",
+    "price": 300.0,
+    "category": "GRAVY"
+  },
+  {
+    "name": "GC Green Chilli Sauce 5kg",
+    "price": 220.0,
+    "category": "GREEN CHILLI SAUCE"
+  },
+  {
+    "name": "Welk Divine Tulsi",
+    "price": 180.0,
+    "category": "GREEN TEA"
+  },
+  {
+    "name": "Welk Orga Classic Green",
+    "price": 160.0,
+    "category": "GREEN TEA"
+  },
+  {
+    "name": "Blue Bird Gulab Jamum175gm",
+    "price": 130.0,
+    "category": "GULAB JAMUM"
+  },
+  {
+    "name": "Abbies Sundried Tomatoes 295 gm Mrp 425",
+    "price": 300.005,
+    "category": "Healthy"
+  },
+  {
+    "name": "CD Soya Chaap 1 kg Frozen",
+    "price": 240.0,
+    "category": "Healthy"
+  },
+  {
+    "name": "CD Soya Chaap Hariyali 250 gm MRP 250",
+    "price": 125.0,
+    "category": "Healthy"
+  },
+  {
+    "name": "CD Soya Chaap Tandoori 250 gm MRP 250",
+    "price": 125.0,
+    "category": "Healthy"
+  },
+  {
+    "name": "Disano Oats 1 kg Mrp 285",
+    "price": 170.0,
+    "category": "Healthy"
+  },
+  {
+    "name": "Edamame With Shell 500 gm",
+    "price": 300.0,
+    "category": "Healthy"
+  },
+  {
+    "name": "Noriko Hon Mirin 1.8Ltr",
+    "price": 1050.0,
+    "category": "HonMirin"
+  },
+  {
+    "name": "Disano Honey 1 kg",
+    "price": 300.0,
+    "category": "Honey"
+  },
+  {
+    "name": "GC Honey 500 gm",
+    "price": 140.0,
+    "category": "Honey"
+  },
+  {
+    "name": "Cheddar Cheese Yellow 1 kg",
+    "price": 1500.0,
+    "category": "Imported Cheese"
+  },
+  {
+    "name": "Dutch Gouda Cheese 1 kg",
+    "price": 1450.0,
+    "category": "Imported Cheese"
+  },
+  {
+    "name": "Parmesan Cheese 1 kg IMP",
+    "price": 1650.0,
+    "category": "Imported Cheese"
+  },
+  {
+    "name": "Monin Blue Curaco Syrup 1ltr",
+    "price": 850.0,
+    "category": "Imported Syrup"
+  },
+  {
+    "name": "Monin Caramel 1 ltr",
+    "price": 850.0,
+    "category": "Imported Syrup"
+  },
+  {
+    "name": "Monin Cherry Syrup 700ml",
+    "price": 760.0,
+    "category": "Imported Syrup"
+  },
+  {
+    "name": "Monin Mojito Mint Syrup 1 ltr",
+    "price": 850.0,
+    "category": "Imported Syrup"
+  },
+  {
+    "name": "Monin Passion Fruit Syrup 1 ltr",
+    "price": 850.0,
+    "category": "Imported Syrup"
+  },
+  {
+    "name": "Monin Popcorn Syrup 1ltr",
+    "price": 850.0,
+    "category": "Imported Syrup"
+  },
+  {
+    "name": "Monin Rose Syrup 1ltr",
+    "price": 850.0,
+    "category": "Imported Syrup"
+  },
+  {
+    "name": "Monin Triple Sec Curracao 1 ltr",
+    "price": 896.0,
+    "category": "Imported Syrup"
+  },
+  {
+    "name": "GC Mix Fruit Jam 1kg",
+    "price": 130.0,
+    "category": "Jam"
+  },
+  {
+    "name": "Malas Mango Jam 1kg",
+    "price": 155.0,
+    "category": "Jam"
+  },
+  {
+    "name": "Malas Pineapple Jam 1 kg",
+    "price": 166.5,
+    "category": "Jam"
+  },
+  {
+    "name": "Malas Strawberry Jam 0s 350 gm",
+    "price": 252.0,
+    "category": "Jam"
+  },
+  {
+    "name": "Caneen Wasabi Powder 1 kg",
+    "price": 1200.0,
+    "category": "Japanese"
+  },
+  {
+    "name": "Hisashi Wasabi Tube 43gm",
+    "price": 140.0,
+    "category": "Japanese"
+  },
+  {
+    "name": "Leng Heng Ginger Pickeled 1.5 kg",
+    "price": 750.0,
+    "category": "Japanese"
+  },
+  {
+    "name": "Marukome Miso Paste White 1 kg",
+    "price": 450.0,
+    "category": "Japanese"
+  },
+  {
+    "name": "Norika Sushi Vinegar 1 8 ltr",
+    "price": 920.0,
+    "category": "Japanese"
+  },
+  {
+    "name": "Ristoris Arborio Rice 1 kg",
+    "price": 520.0,
+    "category": "Japanese"
+  },
+  {
+    "name": "Voila Sushi Nori Sheet 10 sheet",
+    "price": 250.0,
+    "category": "Japanese"
+  },
+  {
+    "name": "Yokoso Sushi Rice 1 kg",
+    "price": 350.0,
+    "category": "Japanese"
+  },
+  {
+    "name": "Yokoso Sushi Vinegar 1.8 ltr",
+    "price": 950.0,
+    "category": "Japanese"
+  },
+  {
+    "name": "GC Lime Juice 500ml",
+    "price": 85.0,
+    "category": "Juice"
+  },
+  {
+    "name": "Habit Lemon Concentrate Juice 1 ltr",
+    "price": 170.0,
+    "category": "Juice"
+  },
+  {
+    "name": "Malas Alphanso Mango Syrup 750ml",
+    "price": 144.0,
+    "category": "Juice"
+  },
+  {
+    "name": "Malas Blue Berry Cursh750ml",
+    "price": 315.0,
+    "category": "Juice"
+  },
+  {
+    "name": "RAW Coconut Water 200 ml",
+    "price": 51.0,
+    "category": "Juice"
+  },
+  {
+    "name": "Real Apple Juice 1 ltr",
+    "price": 103.5,
+    "category": "Juice"
+  },
+  {
+    "name": "Real Cranberry Juice 1 ltr",
+    "price": 126.0,
+    "category": "Juice"
+  },
+  {
+    "name": "Real Grape Juice 1 ltr",
+    "price": 110.5,
+    "category": "Juice"
+  },
+  {
+    "name": "Real Guava Juice 1 ltr",
+    "price": 108.0,
+    "category": "Juice"
+  },
+  {
+    "name": "Real Litchi Juice 1 ltr",
+    "price": 113.0,
+    "category": "Juice"
+  },
+  {
+    "name": "Real Mango Juice 1 ltr",
+    "price": 115.0,
+    "category": "Juice"
+  },
+  {
+    "name": "Real Mix Fruit Juice 1 ltr",
+    "price": 117.0,
+    "category": "Juice"
+  },
+  {
+    "name": "Real Orange Juice 1 ltr",
+    "price": 117.0,
+    "category": "Juice"
+  },
+  {
+    "name": "Real Pineapple Juice 1 ltr",
+    "price": 130.0,
+    "category": "Juice"
+  },
+  {
+    "name": "Real Pomegranate Nector 1 ltr",
+    "price": 117.0,
+    "category": "Juice"
+  },
+  {
+    "name": "Flavarich Kasturi Methi 100gm",
+    "price": 70.0,
+    "category": "KASTURI METHI"
+  },
+  {
+    "name": "GC Kewra E Khaas Water 500ml",
+    "price": 50.0,
+    "category": "KEWRA WATER"
+  },
+  {
+    "name": "QB Mutton Seekh Kebab 1 kg",
+    "price": 720.0,
+    "category": "Kebab Frozen"
+  },
+  {
+    "name": "Gustora Pasta Lasagne 500gm",
+    "price": 200.0,
+    "category": "LASAGNE"
+  },
+  {
+    "name": "Dlecta Mascarpone 400gm",
+    "price": 380.0,
+    "category": "MASCARPONE"
+  },
+  {
+    "name": "Cremica Burger Mayo 275gm",
+    "price": 115.0,
+    "category": "MAYO"
+  },
+  {
+    "name": "Cremica Lite Mayo 275gm",
+    "price": 96.3,
+    "category": "MAYO"
+  },
+  {
+    "name": "Cremica Vegetarian Mayo 275gm",
+    "price": 100.0,
+    "category": "MAYO"
+  },
+  {
+    "name": "Cuisinary Chipotle Mayonnaise 1kg",
+    "price": 220.0,
+    "category": "MAYO"
+  },
+  {
+    "name": "WG Burger Mayo 450gm",
+    "price": 180.0,
+    "category": "MAYO"
+  },
+  {
+    "name": "WG Chipotle Mayo 1kg",
+    "price": 215.0,
+    "category": "MAYO"
+  },
+  {
+    "name": "WG Classic Veg Mayo 1kg",
+    "price": 100.0,
+    "category": "MAYO"
+  },
+  {
+    "name": "WG Honey Mustard Mayo 1kg",
+    "price": 215.0,
+    "category": "MAYO"
+  },
+  {
+    "name": "WG Premium Veg Mayo 1 kg",
+    "price": 110.0,
+    "category": "MAYO"
+  },
+  {
+    "name": "DAHI T 10 KG FRESH",
+    "price": 790.0,
+    "category": "MILK AND CURD"
+  },
+  {
+    "name": "Dahi Fresh",
+    "price": 80.0,
+    "category": "MILK AND CURD"
+  },
+  {
+    "name": "MILK FRESH",
+    "price": 67.0,
+    "category": "MILK AND CURD"
+  },
+  {
+    "name": "GC Mixed Pickle 1kg",
+    "price": 130.0,
+    "category": "MIXED PICKLE"
+  },
+  {
+    "name": "GC Mojito Lime And Mint 750ml",
+    "price": 330.0,
+    "category": "MOJITO MINT"
+  },
+  {
+    "name": "Cheese Corn MOMO",
+    "price": 350.0,
+    "category": "MOMO"
+  },
+  {
+    "name": "Chicken Kurkure Momo",
+    "price": 170.0,
+    "category": "MOMO"
+  },
+  {
+    "name": "Paneer Momo",
+    "price": 180.0,
+    "category": "MOMO"
+  },
+  {
+    "name": "Veg Schezwan Momo",
+    "price": 180.0,
+    "category": "MOMO"
+  },
+  {
+    "name": "Derista Mozarella Cheese 500gm",
+    "price": 270.0,
+    "category": "MOZARELLA"
+  },
+  {
+    "name": "BLG Magic Masala 6 gm MRP 5",
+    "price": 50.0,
+    "category": "Masala"
+  },
+  {
+    "name": "ORIKA MALABAR BLACK PEPPER",
+    "price": 151.2,
+    "category": "Masala"
+  },
+  {
+    "name": "Prakash Chicken Sukka Masala 25 gm",
+    "price": 30.0,
+    "category": "Masala"
+  },
+  {
+    "name": "Prakash Kolhapuri Mutter Paneer Masala 25 gm",
+    "price": 30.0,
+    "category": "Masala"
+  },
+  {
+    "name": "Prakash Kolhapuri Mutton Rassa Masala",
+    "price": 1.0,
+    "category": "Masala"
+  },
+  {
+    "name": "Prakash Mumbai Veg Biryani 25 gm",
+    "price": 30.0,
+    "category": "Masala"
+  },
+  {
+    "name": "First Choice Udon Noodle 300 gm",
+    "price": 130.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "GC Hakka Noodles 1kg",
+    "price": 110.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "Hillers Veg Hakka Noodles 400 gm",
+    "price": 70.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "IDEA Veg Hakka Noodle 1 kg Pkt",
+    "price": 60.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "Idea Veg Hakka Noddles White BOX 1 kg",
+    "price": 350.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "Idea Yellow Hakka Noodles 1 kg",
+    "price": 60.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "Nongshim Shin Ramyun Noodle Soup 120gm",
+    "price": 130.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "Norika Ramen Noodles 300gm",
+    "price": 130.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "Sakura Ramen Noodle 300 gm",
+    "price": 90.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "Samyang Black Ramen 140 gm",
+    "price": 120.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "Samyang Carbonara Ramen 140 gm",
+    "price": 130.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "Samyang Chicken Cheese Ramen 140 gm",
+    "price": 130.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "Samyang Jjajang Ramen 140 gm",
+    "price": 130.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "Samyang Ramen 2x Spicy 140 gm",
+    "price": 130.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "Samyang Ramen 3x Spicy 140 gm",
+    "price": 130.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "Samyang Rose Buldak 140 gm",
+    "price": 130.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "Umai Soba Noodle Buckwheat 300 gm",
+    "price": 118.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "Umai Udon Noodle 300 gm",
+    "price": 130.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "Yoka Soba Noodle Buckwheat 300 gm",
+    "price": 130.0,
+    "category": "Noodles"
+  },
+  {
+    "name": "Borges Extra Light Olive Oil 1Ltr",
+    "price": 1520.0,
+    "category": "Olive & Olive Oil"
+  },
+  {
+    "name": "Disano Pomace Olive Oil 1ltr",
+    "price": 1395.0,
+    "category": "Olive & Olive Oil"
+  },
+  {
+    "name": "Disano Pomace Olive Oil 500gm",
+    "price": 760.75,
+    "category": "Olive & Olive Oil"
+  },
+  {
+    "name": "Euro Gold Pitted Black Olives 450 gm",
+    "price": 200.0,
+    "category": "Olive & Olive Oil"
+  },
+  {
+    "name": "Euro Gold Pitted Green Olives 450 gm",
+    "price": 180.0,
+    "category": "Olive & Olive Oil"
+  },
+  {
+    "name": "Euro Gold Sliced Black Olives 450 gm",
+    "price": 190.0,
+    "category": "Olive & Olive Oil"
+  },
+  {
+    "name": "Euro Gold Sliced Green Olives 450gm",
+    "price": 190.0,
+    "category": "Olive & Olive Oil"
+  },
+  {
+    "name": "Habit Black Olive Sliced 430 gm",
+    "price": 180.0,
+    "category": "Olive & Olive Oil"
+  },
+  {
+    "name": "Habit Black Olives Pitted 430 gm",
+    "price": 190.0,
+    "category": "Olive & Olive Oil"
+  },
+  {
+    "name": "Habit Capers 100 gm",
+    "price": 100.005,
+    "category": "Olive & Olive Oil"
+  },
+  {
+    "name": "Habit Extra Virgin Oilve Oil 1ltr Buy 1 Get 1",
+    "price": 2350.0,
+    "category": "Olive & Olive Oil"
+  },
+  {
+    "name": "Habit Green Olives Slice 430 gm",
+    "price": 180.0,
+    "category": "Olive & Olive Oil"
+  },
+  {
+    "name": "Jivo Pomace Olive Oil 1ltr",
+    "price": 440.0,
+    "category": "Olive & Olive Oil"
+  },
+  {
+    "name": "Jivo Poomace Olive Oil 5ltr",
+    "price": 2200.0,
+    "category": "Olive & Olive Oil"
+  },
+  {
+    "name": "Multu Cous Cous 500gm",
+    "price": 120.0,
+    "category": "Olive & Olive Oil"
+  },
+  {
+    "name": "Burger Bun 6 pcs",
+    "price": 50.0,
+    "category": "Other"
+  },
+  {
+    "name": "Chicken Cheese Momo",
+    "price": 330.0,
+    "category": "Other"
+  },
+  {
+    "name": "Chicken Momo",
+    "price": 180.0,
+    "category": "Other"
+  },
+  {
+    "name": "Chicken Peri Peri Momo",
+    "price": 200.0,
+    "category": "Other"
+  },
+  {
+    "name": "Chicken Seekh Kabab Herbal",
+    "price": 380.0,
+    "category": "Other"
+  },
+  {
+    "name": "GF B. FRESH",
+    "price": 320.0,
+    "category": "Other"
+  },
+  {
+    "name": "GF Paneer FRESH",
+    "price": 450.0,
+    "category": "Other"
+  },
+  {
+    "name": "Garlic Bread Fr 2 pcs",
+    "price": 100.0,
+    "category": "Other"
+  },
+  {
+    "name": "Green Peas Fr 1 kg",
+    "price": 200.0,
+    "category": "Other"
+  },
+  {
+    "name": "Habit Apple Cider Vinegar 500 ml",
+    "price": 120.0,
+    "category": "Other"
+  },
+  {
+    "name": "Habit Red Paprika Sliced 680gm",
+    "price": 180.0,
+    "category": "Other"
+  },
+  {
+    "name": "Habit Silver Skin Onions 680 gm",
+    "price": 180.0,
+    "category": "Other"
+  },
+  {
+    "name": "ITEM 3",
+    "price": 297.5,
+    "category": "Other"
+  },
+  {
+    "name": "ITEM 4",
+    "price": 600.0,
+    "category": "Other"
+  },
+  {
+    "name": "Item 2",
+    "price": 480.0,
+    "category": "Other"
+  },
+  {
+    "name": "Momo other",
+    "price": 180.0,
+    "category": "Other"
+  },
+  {
+    "name": "Pizza Base Fr 3 pcs",
+    "price": 50.0,
+    "category": "Other"
+  },
+  {
+    "name": "Sandwich Bread Fr",
+    "price": 80.0,
+    "category": "Other"
+  },
+  {
+    "name": "Silk Almond Milk 946 ml",
+    "price": 350.0,
+    "category": "Other"
+  },
+  {
+    "name": "Sweet Corn Fr 1 kg",
+    "price": 100.0,
+    "category": "Other"
+  },
+  {
+    "name": "Veg Cheese Momo",
+    "price": 190.0,
+    "category": "Other"
+  },
+  {
+    "name": "Veg Momo",
+    "price": 160.0,
+    "category": "Other"
+  },
+  {
+    "name": "Veg Peri Peri Momo",
+    "price": 180.0,
+    "category": "Other"
+  },
+  {
+    "name": "Vadilal Methi Paratha 400gm",
+    "price": 135.0,
+    "category": "PARATHA"
+  },
+  {
+    "name": "Foodrite Ginger Garlic Paste 1kg",
+    "price": 150.0,
+    "category": "PASTE"
+  },
+  {
+    "name": "Kissan Tomato Paste 1kg",
+    "price": 160.0,
+    "category": "PASTE"
+  },
+  {
+    "name": "Fiamma Whole Peeled Tomatoes 2.55kg",
+    "price": 520.0,
+    "category": "PEELED TOMATO."
+  },
+  {
+    "name": "GC Whole Peeled Tomatoes 2.65kg",
+    "price": 380.0,
+    "category": "PEELED TOMATO."
+  },
+  {
+    "name": "Delmonte Chifferi Rigati Pasta 400gm",
+    "price": 95.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "Delmonte Penne Pasta 5 kg",
+    "price": 515.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "Delmonte Penne Rigate Pasta 400gm",
+    "price": 95.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "Delmonte Spaghetti 500 gm",
+    "price": 95.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "Gustora Farfalle Pasta 500gm",
+    "price": 100.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "Gustora Pasta Penne Rigate 500gm",
+    "price": 80.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "Habit Farfale Pasta 500 gm",
+    "price": 90.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "Habit Penne Pasta 500 gm",
+    "price": 80.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "Reggia Penne Pasta",
+    "price": 120.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "Reggia Rigatoni Pasta 500 gm",
+    "price": 160.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "Reggia Spagetti Pasta 500gm",
+    "price": 120.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "San Vito Lasagne 500 gm",
+    "price": 220.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "San Vito Spaghetti 500 gm",
+    "price": 80.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "San Vito Tricolour Fusilli 500 gm",
+    "price": 100.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "San Vito Tricolour Penne 500 gm",
+    "price": 100.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "San Vitto Fusilli Pasta 500gm",
+    "price": 70.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "San Vitto Penne Pasta 500gm",
+    "price": 70.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "Sunbay Fusilli Pasta 500 gm",
+    "price": 70.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "Sunbay Macroni Pasta 500 gm",
+    "price": 70.0,
+    "category": "Pasta"
+  },
+  {
+    "name": "Freshos Peanut Butter Crunchy 510 gm",
+    "price": 160.0,
+    "category": "Peanut Butter"
+  },
+  {
+    "name": "Laxmiraj Mixed Pickle 5 kg",
+    "price": 250.0,
+    "category": "Pickle"
+  },
+  {
+    "name": "Laxmiraj Mixed Pickle 500 gm",
+    "price": 100.0,
+    "category": "Pickle"
+  },
+  {
+    "name": "Surabhi Mixed Pickle Sachet 8 gm",
+    "price": 100.0,
+    "category": "Pickle"
+  },
+  {
+    "name": "Yokoso Pickled Ginger 2kg",
+    "price": 670.0,
+    "category": "Pickle"
+  },
+  {
+    "name": "GC Red Chilli Sauce 5kg",
+    "price": 220.0,
+    "category": "RED CHILLI"
+  },
+  {
+    "name": "Snapin Rosemary 25gm",
+    "price": 90.0,
+    "category": "ROSEMERY"
+  },
+  {
+    "name": "Chefys Pizza Dough Improver 500 gm",
+    "price": 150.005,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "Freshos Arborio Rice riso 1 kg",
+    "price": 550.0,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "GC Baking powder 400gm",
+    "price": 70.0,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "GC Bread Crumb American Style 1 kg",
+    "price": 130.0,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "GC Bread crumb 1kg",
+    "price": 160.0,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "GC Corn Flour 1 kg",
+    "price": 80.0,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "Gold Sushi Nori 50 Sheet",
+    "price": 799.995,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "Habit Potato Starch 500 gm",
+    "price": 140.0,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "Habit Wheat Starch 500gm",
+    "price": 130.0,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "Harnik Caramel Pudding 90 gm",
+    "price": 40.0,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "Hillers Veg Hakka Noodle 800 gm",
+    "price": 100.0,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "Kings Falooda Sev Vermicelli 100gm",
+    "price": 60.0,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "Mahboonkrong Jasmine Rice 2 kg",
+    "price": 650.0,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "Mr-Hung Tempura Flour 1kg",
+    "price": 200.0,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "Salsalito Nacho Chips Classic Salted 200 gm",
+    "price": 100.0,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "Salsalito Nacho Chips Jalapeno 200 Gm",
+    "price": 100.0,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "Salsalito Taco Shells 150 gm",
+    "price": 162.0,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "Ufm Red Lotus Flour 1kg",
+    "price": 270.0,
+    "category": "Rice and Flour"
+  },
+  {
+    "name": "GC Refined Sunflower Salad Oil 1ltr",
+    "price": 240.0,
+    "category": "SALAD OIL"
+  },
+  {
+    "name": "Habit Seasame Oil Toasted 500Ml",
+    "price": 400.0,
+    "category": "SEASAME OIL"
+  },
+  {
+    "name": "GC Silver Skin Onion 350gm",
+    "price": 110.0,
+    "category": "SILVERONION"
+  },
+  {
+    "name": "GC Veg Soya Chaap On Sticks 850gm",
+    "price": 140.0,
+    "category": "SOYA"
+  },
+  {
+    "name": "LKK Light Soya Sauce 12 5 LTR",
+    "price": 3933.99,
+    "category": "SOYA"
+  },
+  {
+    "name": "Sing Cheung Light Soya 800gm",
+    "price": 125.0,
+    "category": "SOYA"
+  },
+  {
+    "name": "Noriko Sushi Vinegar 500ml",
+    "price": 400.0,
+    "category": "SUSHI VINGAR"
+  },
+  {
+    "name": "ABC Sweet Sauce Soya 620 ml",
+    "price": 220.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "American Garden BBQ Sauce 510 gm",
+    "price": 320.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Capsico Sauce 60 gm",
+    "price": 80.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Chings Green Chilly Sauce 680 gm",
+    "price": 60.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Chings Red Chilly Sauce 680 gm",
+    "price": 60.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Chings Schezwan Sauce 1 kg",
+    "price": 230.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Chings Soya Sauce 680 gm",
+    "price": 60.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Covinor Moutarde De Dijon 370 gm",
+    "price": 200.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Double Pagoda Rice Vinegar 750 ml",
+    "price": 250.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Freshos Sesame Oil Toasted 500 ml",
+    "price": 420.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Freshos White Vinegar",
+    "price": 220.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Habanero Bhoot Jolokia Sauce 200 gm",
+    "price": 188.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Habanero Chilli Garlic Sauce 200 gm",
+    "price": 169.15,
+    "category": "Sauce"
+  },
+  {
+    "name": "Habanero Creamy Pasta Sauce 350 gm",
+    "price": 228.65,
+    "category": "Sauce"
+  },
+  {
+    "name": "Habanero Olive Pasta Sauce 385 gm",
+    "price": 203.15,
+    "category": "Sauce"
+  },
+  {
+    "name": "Habanero Peri Peri Sauce 200 gm",
+    "price": 184.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Habanero Spicy Pasta Sauce 385 gm",
+    "price": 183.2,
+    "category": "Sauce"
+  },
+  {
+    "name": "Habanero Spicy Salsa 270 gm",
+    "price": 159.2,
+    "category": "Sauce"
+  },
+  {
+    "name": "Habanero Sriracha Sauce 200 gm",
+    "price": 159.2,
+    "category": "Sauce"
+  },
+  {
+    "name": "Hillers Dark Soya Sauce 5 kg",
+    "price": 220.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Hillers Green Chilli Sauce 660 gm",
+    "price": 50.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Hillers Red Chilli Sauce 680 gm",
+    "price": 50.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Hillers Synthetic Vinegar 670 ml",
+    "price": 30.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Hillers Tomato Dip Sause 5 Kg",
+    "price": 220.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Hot Sriraja Panich Chili Sauce 570g",
+    "price": 220.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Hp Sauce 255 ml",
+    "price": 250.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "IDEA Chilly 5 KG",
+    "price": 110.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Kewpie Japanese Style Mayonnaise 310 gm",
+    "price": 350.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Kikoman Soya Sauce 1Ltr",
+    "price": 410.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "L & P Worchestershire Sauce 290 ml",
+    "price": 170.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "LKK Chilly Garlic Sauce 226gm",
+    "price": 260.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "LKK Dark Soya sauce 500ml",
+    "price": 220.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "LKK Hoisin Sauce 240 gm",
+    "price": 225.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "LKK Light Soya Sauce 500ml",
+    "price": 220.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "LKK Panda Oyster 510 gm",
+    "price": 250.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "LKK Panda Oyster Sauce 2.20kg",
+    "price": 650.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "LKK Teriyaki Sauce 250 ml",
+    "price": 260.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "LKK Veg Oyester Sauce 510 gm",
+    "price": 280.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Leong Red Chilli Sauce 680GM",
+    "price": 60.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Lkk Chilly Bean Sauce 226gm",
+    "price": 220.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Maepranom Sweet Chilli Sauce 980 gm",
+    "price": 280.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Maggi Seasioning 200 ml",
+    "price": 200.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Magic Dip Sauce 4.5 kg",
+    "price": 260.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "S&amp;B Wasabi Tube 43gm",
+    "price": 180.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Sakura Miso Paste 1 kg",
+    "price": 450.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Sams 8 To 9 All Meal Sauce 200 gm",
+    "price": 70.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Sing Cheung Chilly Sauce 22kg",
+    "price": 2320.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "TE Shao Hsing Seasoning 640 ml",
+    "price": 250.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Tabasco Garlic 60 ml",
+    "price": 320.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Tabasco Red 60 ml Mc Ilhennyn",
+    "price": 220.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Tabasco Zesty Green 60 ml",
+    "price": 320.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Tiparos Fish Sauce 700 ml",
+    "price": 200.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Winn Chilli Sauce 8 gmx 100",
+    "price": 80.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Winn Dark Soya 4.5 kg",
+    "price": 240.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Winn Dark Soya 8 gmx100",
+    "price": 80.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Winn Tomato Ketchup 8 gmx100",
+    "price": 80.0,
+    "category": "Sauce"
+  },
+  {
+    "name": "Foodrite Szechuan Chutney 1 kg",
+    "price": 170.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "Freshos White Wine Vinegar 1 ltr",
+    "price": 220.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "GC Vinegar 680 ml",
+    "price": 40.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "Habanero Spicy BBQ Sauce 280 gm",
+    "price": 220.15,
+    "category": "Sauces"
+  },
+  {
+    "name": "Habanero Tomato Salsa 270 gm",
+    "price": 159.2,
+    "category": "Sauces"
+  },
+  {
+    "name": "Hillers Dark Soya Sauce 720 gm",
+    "price": 50.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "Hillers Red Chilli Sauce 5 kg",
+    "price": 210.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "Hillers Schezwan Chutney 1 kg",
+    "price": 150.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "Hoi Momo Sauce 1 kg",
+    "price": 180.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "Hoi Momo Sauce Green 1 kg",
+    "price": 180.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "LKK CHilli Bean Sauce 2.040 KG",
+    "price": 980.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "LKK Premium Dark Soya Sauce 11.7 ltr",
+    "price": 3684.99,
+    "category": "Sauces"
+  },
+  {
+    "name": "LKK Teriyaki Bbq Sauce 1 kg",
+    "price": 850.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "Leong Dark Soya Sauce 750 gm",
+    "price": 60.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "Maggi Cooking Sauce 680 ml",
+    "price": 210.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "Real Thai Sweet Chilli Sauce 235 ml",
+    "price": 180.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "SAMS Dark Soya Sauce 700 gm",
+    "price": 60.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "SAMS Red Chilly Sauce 700 gm",
+    "price": 50.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "SAMS Worcestershire Sauce",
+    "price": 70.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "Sing Cheung Dark Soya Sauce 25 ltr",
+    "price": 2325.993333333333,
+    "category": "Sauces"
+  },
+  {
+    "name": "Sing Cheung Light Soya Sauce 25kg",
+    "price": 3050.993333333333,
+    "category": "Sauces"
+  },
+  {
+    "name": "WH Black Pepper Sauce 285 gm",
+    "price": 220.0016666666667,
+    "category": "Sauces"
+  },
+  {
+    "name": "WH Hoisin Sauce 350 gm",
+    "price": 220.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "WH Kung Po Sauce 290 gm",
+    "price": 260.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "WH Nonveg Oyster Sauce 520 gm",
+    "price": 205.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "WH Sambal Oelek 320 gm",
+    "price": 220.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "WH Shiitake MushroomVeg Oyster Sauce 500 gm",
+    "price": 220.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "WH Singapore Laksa Paste 190 gm",
+    "price": 220.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "WH Spicy Blackbean Sauce 340",
+    "price": 220.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "WH Teriyaki Marinade Sauce 185gm",
+    "price": 160.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "WH Thai Chilly Sauce 450 gm",
+    "price": 200.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "Winn Red Chilli Sauce 4.5 kg",
+    "price": 240.0,
+    "category": "Sauces"
+  },
+  {
+    "name": "Ajinomoto MSG 1 kg",
+    "price": 200.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Big Bell Chilly Flakes 1 kg",
+    "price": 380.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Big Bell Oregano 1 kg",
+    "price": 250.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Blue Vally Instant Dry Yeast 500 gm",
+    "price": 230.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Bush Orange Red Colour 100 gm",
+    "price": 65.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefs Art Cajun Spice 400 gm",
+    "price": 320.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefs Art Chilli Garlic Sprinkler 500 gm",
+    "price": 310.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefs Art Crispy Cajun Breading Mix 1 kg",
+    "price": 330.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefs Art Extra Hot &amp; Spicy Marinade 1kg",
+    "price": 405.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefs Art Oregano Spice Sprinkle 500gm",
+    "price": 310.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefs Art Peri Peri Marinade 1kg",
+    "price": 470.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefs Art Peri Peri sprinkler 250gm",
+    "price": 150.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefy Extra Hot & Spicy Marinate 500gm",
+    "price": 170.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefys Aromatimix Powder 500gm",
+    "price": 180.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefys Cajun Spice Mix 500gm",
+    "price": 350.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefys Chilli Flakes Sachet 7 gm",
+    "price": 100.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefys Chilli Garlic Sprinkler 250gm",
+    "price": 160.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefys Extra Hot N Spicy Marinade 500gm",
+    "price": 190.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefys Lime Seasioning Mix 500gm",
+    "price": 200.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefys Oregano Sachet 7gm",
+    "price": 100.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefys Oregano Spice sprinkler 500 gm",
+    "price": 250.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefys Peri Peri Marinate 500gm",
+    "price": 260.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefys Peri Peri Sprinkler 250gm",
+    "price": 160.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefys Tandoori Tikka Base 500 gm",
+    "price": 250.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Chefys White Pasta Sauce Premix 500GM",
+    "price": 380.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Cuisinary",
+    "price": 280.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Cuisinary Aromat Mix 500 gm",
+    "price": 180.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Cuisinary Cajun Brreader Mix 1 kg",
+    "price": 280.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Cuisinary Chicken Broth Powder 500 gm",
+    "price": 250.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Cuisinary Chilli Flakes 500gm",
+    "price": 230.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Cuisinary Extra Hot n Spicy Marinade 500 gm",
+    "price": 190.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Cuisinary Kerala Green Pepper Marinade 500gm",
+    "price": 340.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Cuisinary Lime Seasoning 500gm",
+    "price": 220.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Cuisinary Mac N Cheese Seasoning 500gm",
+    "price": 320.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Cuisinary Oregano Spice Sprinkler 500gm",
+    "price": 280.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Cuisinary Peri Peri Mariande 500 gm",
+    "price": 250.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Cuisinary Peri Peri Sprinkler 500 gm",
+    "price": 250.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Cuisinary Peri Peri Sprinkler Sizzling Hot 250gm",
+    "price": 150.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Cuisinary Tandoori Tkka Marinade 500gm",
+    "price": 250.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Cuisinary garlic Powder 1 kg",
+    "price": 180.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "FB Peri Peri Seasoning 10gm",
+    "price": 10.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Freshos Potato Starch 1kg",
+    "price": 251.9888,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Hillers Noodle Masala 20 gm",
+    "price": 10.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Hillers Paneer Chilli Masala 20 gm",
+    "price": 10.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Hillers Schezwan 40 gm",
+    "price": 10.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Hillers Schezwan Fry Masla 20 gm",
+    "price": 10.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Knorr Aromat Seasoning 500 gm",
+    "price": 200.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Knorr Chicken Seasoning Powder 500gm",
+    "price": 280.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Knorr Demi Glace Powder 500 gm",
+    "price": 300.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Knorr Lime Seasoning Powder 500gm",
+    "price": 230.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Knorr Rostrip Seasoning 800gm",
+    "price": 320.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Lobo Five Spice 63 gm",
+    "price": 130.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "NS Cajun Spice 500 gm",
+    "price": 565.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "NS Cayenne Pepper 400 gm",
+    "price": 495.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "NS Chilli Flakes 1 Sachet 0gm",
+    "price": 10.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "NS Jamaican Jerk Seasoning 500gm",
+    "price": 585.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "NS Oregano Sachet 4Gm",
+    "price": 10.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "NS Oregano Seasoning Sachet 10Gm",
+    "price": 10.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "NS Paprika Powder 400 gm",
+    "price": 450.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "NS Piri PirI Seasoning Sachet 10Gm",
+    "price": 10.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "NS Smoked Paprika Powder 400 gm",
+    "price": 595.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "NS Sweet Paprika Powder 400 gm",
+    "price": 450.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "NS Zatar Powder 50 gm",
+    "price": 121.5,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Nguan soon Szechuan pepper corn 500 gm",
+    "price": 1000.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Orika Himalayan Pink Salt 100gm",
+    "price": 121.5,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Orika Italian Seasoning 75 gm",
+    "price": 85.5,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Orika Old Dilli Chaat Masala 90 gm",
+    "price": 83.7,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Orika Peri Peri 75 gm",
+    "price": 110.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Orika Pizza Pasta Seasoning 10gm",
+    "price": 10.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Orika Red Chilli Flakes 10gm",
+    "price": 10.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Orika Red Chilli Flakes 50 gm",
+    "price": 80.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Orika Turkish Oregano 22 gm",
+    "price": 115.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Prakash Kolhapuri Chicken Biryani Masala",
+    "price": 30.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Prakash Kolhapuri Misal Masala",
+    "price": 27.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Prakash Kolhapuri Paneer Masala 25 gm",
+    "price": 34.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Prakash Kolhapuri Thecha 100 gm",
+    "price": 30.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Prakash Malvani Fish Fry Masala 25 gm",
+    "price": 30.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Prime Instant Dry Yeast 500 gm",
+    "price": 230.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Sarwar Black Beans Preserved 500 gm",
+    "price": 250.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Sarwar Cajun Spice 450 gm",
+    "price": 319.995,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Sarwar Ginger Powder 400Gm",
+    "price": 240.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Sarwar Salad Oil 1 ltr",
+    "price": 220.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Sarwar White Masala Pepper 500 gm",
+    "price": 60.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Sarwar Zaatar Powder 400gm",
+    "price": 500.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Ship Madras Curry Powder 500 gm",
+    "price": 330.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Skylex Garam Masala 1 kg",
+    "price": 250.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Snapin Basil 3 gm",
+    "price": 90.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Snapin Garlic Powder 40 gm",
+    "price": 90.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Snapin Mixed Herbs 20 gm",
+    "price": 98.1,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Snapin Mixed Herbs 6gm",
+    "price": 10.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Snapin Oregano Seasoning 7 gm",
+    "price": 10.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Snapin Parsley 6gm",
+    "price": 89.1,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Snapin Piri Piri Mix Sachet",
+    "price": 10.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Snapin White Onion Powder 40 gm",
+    "price": 89.1,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "StarZing White Chinese Pepper 500 gm",
+    "price": 90.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Starzing Black Chinese Pepper Masala 1 kg",
+    "price": 200.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Starzing Chat Masala 1 kg",
+    "price": 180.0,
+    "category": "Seasoning & Marination"
+  },
+  {
+    "name": "Sarwar Icing Sugar 1Kg",
+    "price": 80.0,
+    "category": "Sugar"
+  },
+  {
+    "name": "Uttam Brown Suger Sachet 5gm",
+    "price": 130.0,
+    "category": "Sugar"
+  },
+  {
+    "name": "Uttam Natural Brown Sugar 1 kg",
+    "price": 120.0,
+    "category": "Sugar"
+  },
+  {
+    "name": "Uttam Sugar White Sugar sachets",
+    "price": 140.0,
+    "category": "Sugar"
+  },
+  {
+    "name": "Foodea Sweet Corn Cream Style 450gm",
+    "price": 65.0,
+    "category": "Sweet"
+  },
+  {
+    "name": "GC Gulab Jamun 1 kg",
+    "price": 170.0,
+    "category": "Sweet"
+  },
+  {
+    "name": "GC Rasogolla 1 kg",
+    "price": 170.0,
+    "category": "Sweet"
+  },
+  {
+    "name": "American Garden Pancake Syrup 710 ml",
+    "price": 650.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Barisco Chilli Guava Syrup 775 ml",
+    "price": 385.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Blue Bird Lemon Ice tea 400 gm",
+    "price": 160.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Blue Bird Peach Ice Tea 400 gm",
+    "price": 160.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Cremica Blue Curacao Syrup 1ltr",
+    "price": 380.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Cremica Cucumber Syrup 1ltr",
+    "price": 380.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Cremica Mojito Mint Syrup 1ltr",
+    "price": 380.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Cremica Peach Syrup 1ltr",
+    "price": 380.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Cremica Watermelon Syrup 1ltr",
+    "price": 380.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Crown Pairrll Orange Fruit syrup 750ml",
+    "price": 180.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Hershey's Syrup Choco 623 gm",
+    "price": 250.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Hersheys Syrup Chocolate 1 3Kg",
+    "price": 391.5,
+    "category": "Syrup"
+  },
+  {
+    "name": "Hersheys Syrup Chocolate 200 gm",
+    "price": 100.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "MALAS Paan Shot Syrup 750 ml",
+    "price": 144.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Banana Crush 750 ml",
+    "price": 162.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Black Current Crush 750 ml",
+    "price": 153.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Blue Curacao Cordial 750 ml",
+    "price": 270.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Caramel Mocktail 750 ml",
+    "price": 144.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Citrus Punch 750 ml",
+    "price": 269.1,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Custard Apple Whole 750 ml",
+    "price": 270.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Ginger and Lime Syrup 750 ml",
+    "price": 144.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Grape Syrup 750 ml",
+    "price": 254.15,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Green Mint Mocktail 750 ml",
+    "price": 270.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Grenadine Syrup 750 ml",
+    "price": 270.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Hazelnut Syrup 750 ml",
+    "price": 270.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Irish Coffee 750 ml",
+    "price": 270.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Jamun Crush 750 ml",
+    "price": 162.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Jeera Masala Syrup 750 ml",
+    "price": 144.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Jeera Shikanji Syrup 750 ml",
+    "price": 144.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Kacha Aam Syrup 750 ml",
+    "price": 144.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Kala Khatta Syrup 750 ml",
+    "price": 144.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Khus Syrup 750 ml",
+    "price": 150.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Kokum Syrup 750 ml",
+    "price": 140.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Lemon Barley Water Cordial 750ml",
+    "price": 136.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Lemon Cordial 750 ml",
+    "price": 140.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Lemon Ice Tea",
+    "price": 270.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Lime Cordial 750 ml",
+    "price": 144.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Mango Crush 5 ltr",
+    "price": 702.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Mixed Fruit Crush 750 ml",
+    "price": 162.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Orange Crush 750 ml",
+    "price": 162.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Orange Syrup 750ML",
+    "price": 144.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Passion Fruit Mocktail 750ml",
+    "price": 270.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Peach Apricot Crush",
+    "price": 162.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Peach Ice Tea Syrup 750ml",
+    "price": 269.1,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Peach Mocktail 750 ml",
+    "price": 270.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Pina Colada 750 ml",
+    "price": 269.1,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Pineapple Crush",
+    "price": 162.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Pineapple Syrup 750 ml",
+    "price": 144.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Rasmalai Crush 750 ml",
+    "price": 255.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Raspberry Mocktail 750 ml",
+    "price": 269.1,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Rose Syrup 750 ml",
+    "price": 170.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Strawberry Syrup 750 ml",
+    "price": 144.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Transparent Mint Mojito 750 ml",
+    "price": 270.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Vanila Syrup 750 ml",
+    "price": 176.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Variyali Syrup 750ml",
+    "price": 144.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Malas Watermelon Syrup 750ml",
+    "price": 144.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Manama Blue Berry Crush 1 ltr",
+    "price": 340.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Manama Blue Curacao 1 ltr",
+    "price": 420.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Manama Ginger Ale 750 ml",
+    "price": 279.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Manama Green Apple Syrup 750 ml",
+    "price": 279.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Manama Ice Tea Lime 750 ml",
+    "price": 225.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Manama Ice Tea Peach 750 ml",
+    "price": 207.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Manama Kala Khata 750 ml",
+    "price": 171.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Manama Khush Syrup 750ml",
+    "price": 216.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Manama Mango Topping 1 Ltr",
+    "price": 192.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Manama Mojito Lime & Mint Syrup 1Ltr",
+    "price": 420.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Manama Orange Crush 1 ltr",
+    "price": 242.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Manama Pina Colada 750 ml",
+    "price": 264.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Manama Pineapple Topping 1 Ltr",
+    "price": 216.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Manama Strawberry Crush 1 Ltr",
+    "price": 216.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Manama Strawberry Syrup 750 ml",
+    "price": 207.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Manama Water Melon 750 ml",
+    "price": 225.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Marim Bula Blue Curaco 1L",
+    "price": 300.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Mojee Bubblegum Syrup 1ltr",
+    "price": 470.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Mojee Chilli Guava Syrup 1ltr",
+    "price": 510.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Monin Blue Curaco Syrup 700ml",
+    "price": 859.5,
+    "category": "Syrup"
+  },
+  {
+    "name": "Monin Bubble Gum Syrup 1ltr",
+    "price": 850.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Monin Bubble Gum Syrup 700ml",
+    "price": 360.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Monin Coconut Syrup 1ltr",
+    "price": 896.75,
+    "category": "Syrup"
+  },
+  {
+    "name": "Monin Elderflower Syrup 1ltr",
+    "price": 896.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Monin Grenedine Syrup 1ltr",
+    "price": 895.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Monin Hazelnut Syrup 1ltr",
+    "price": 850.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Monin Peach Syrup 1ltr",
+    "price": 895.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Monin Strawberry Syrup 1ltr",
+    "price": 850.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Monin Vanilla Syrup 1ltr",
+    "price": 850.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "Monin Water Melon 1ltr",
+    "price": 896.75,
+    "category": "Syrup"
+  },
+  {
+    "name": "UD American Icecream Syrup 750ml",
+    "price": 148.75,
+    "category": "Syrup"
+  },
+  {
+    "name": "Uttam Liquid Sugar Syrup 1 kg",
+    "price": 120.0,
+    "category": "Syrup"
+  },
+  {
+    "name": "GC Tomato Puree 850gm",
+    "price": 70.0,
+    "category": "TOMATO PURRE"
+  },
+  {
+    "name": "WG Tomato Ketchup Sachet 8gm",
+    "price": 80.0,
+    "category": "TOMATOSACHET"
+  },
+  {
+    "name": "Chaokho Coconut Milk 400ml",
+    "price": 130.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Frozen Edamame With Pods 1 kg",
+    "price": 550.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Frozen Edamame without Pods 1 kg",
+    "price": 650.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Kara Coconut Milk 400ml",
+    "price": 130.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Maggi Coconut Milk Powder 1 kg",
+    "price": 800.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Namjai Green Curry Paste 1 kg",
+    "price": 430.00125,
+    "category": "Thai"
+  },
+  {
+    "name": "Namjai Green Curry Paste 1kg Veg",
+    "price": 430.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Namjai Matsaman Curry Paste 1 kg",
+    "price": 270.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Namjai Red  Curry Paste 1kg Veg",
+    "price": 430.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Namjai Red Curry Paste 1 kg",
+    "price": 430.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Namjai Tom Yum Curry Paste 1kg Veg",
+    "price": 521.99875,
+    "category": "Thai"
+  },
+  {
+    "name": "Real Thai Green Curry Paste 50 gm",
+    "price": 75.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Real Thai Pad Thai Noodles 375 gm",
+    "price": 225.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Real Thai Pad Thai Sauce 180ml",
+    "price": 220.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Real Thai Red Curry Paste 50 gm",
+    "price": 70.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Real Thai Rice Stick 3mm 375 gm",
+    "price": 216.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Real Thai Rice Vermicelli 375 gm",
+    "price": 216.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Real Thai Sriracha Chilli Sauce 430 ml",
+    "price": 280.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Real Thai Tom Yum Soup Paste 50 gm",
+    "price": 70.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Real Thai Yellow Curry Paste 50 gm",
+    "price": 70.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Yoka Rice Paper Sheet 400 gm",
+    "price": 250.0,
+    "category": "Thai"
+  },
+  {
+    "name": "Chandel Tuna In Sunflower Oil 180GM",
+    "price": 145.0,
+    "category": "Tuna"
+  },
+  {
+    "name": "Chandel Tuna In Water 180gm",
+    "price": 136.0,
+    "category": "Tuna"
+  },
+  {
+    "name": "Chandel Tuna in Red Chilli 180 gm",
+    "price": 145.0,
+    "category": "Tuna"
+  },
+  {
+    "name": "FR Onion 1 kg",
+    "price": 240.0,
+    "category": "Veg"
+  },
+  {
+    "name": "American Garden Apple CIder Vinegar 473 ml",
+    "price": 130.0,
+    "category": "Vinegar"
+  },
+  {
+    "name": "Freshos Red Wine Vinegar 1Ltr",
+    "price": 240.0,
+    "category": "Vinegar"
+  },
+  {
+    "name": "Rich Star Whip Topping Cream 1kg",
+    "price": 180.0,
+    "category": "WHIPPED TOPPING"
+  },
+  {
+    "name": "Fresh2Go Tortilla Wrap 6 Inch",
+    "price": 70.0,
+    "category": "Wrap"
+  },
+  {
+    "name": "Habanero Spinach Tortilla Wraps 8.5Inc",
+    "price": 150.0,
+    "category": "Wrap"
+  },
+  {
+    "name": "Monk Foods Hazelnut Chocolate Spread 1kg",
+    "price": 680.0,
+    "category": "chocolate spread"
+  },
+  {
+    "name": "Amul Butter Scothch Ice Cream 5ltr",
+    "price": 800.0,
+    "category": "ice cream"
+  },
+  {
+    "name": "Amul Vanilla Ice Cream 5ltr",
+    "price": 640.0,
+    "category": "ice cream"
+  },
+  {
+    "name": "Frozen Alphonso Pulp 1KG",
+    "price": 250.0,
+    "category": "imported fruit"
+  },
+  {
+    "name": "Frozen Custard Apple Pulp 1KG",
+    "price": 260.0,
+    "category": "imported fruit"
+  }
+]

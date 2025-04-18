@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shivneri Fresh Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <div id="messages" class="messages"></div>
+
+    <!-- 🔘 Shortcut Buttons -->
+    <div id="shortcuts" class="shortcuts">
+      <button onclick="triggerSearch('Amul Cheese')">🧀 Amul Cheese</button>
+      <button onclick="triggerSearch('French Fries')">🍟 French Fries</button>
+      <button id="clear-chat" class="clear-btn hidden">🧹 Clear Chat</button>
+      <button onclick="triggerSearch('Tomato Ketchup')">🍅 Tomato Ketchup</button>
+    </div>
+
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Type a product name..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- Fuse.js + App Logic -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script src="app.js"></script>
+</body>
+</html>
