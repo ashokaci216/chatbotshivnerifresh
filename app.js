@@ -65,8 +65,7 @@ function showWelcomeMessage() {
   else greeting = "🌙 Good Evening! Welcome to Shivneri Fresh!";
 
   addMessage('bot', greeting);
-  addMessage('bot', "Try searching for items like:");
-  addMessage('bot', "Search by brand: [🧀 Amul] [🍗 Nutrich] [🧈 Nandini]");
+  addMessage('bot', "Search by brand: [🧀 Amul] [🍗 Nutrich]");
   addMessage('bot', "Looking for something else?<br>Type: <b>‘burger patty’</b>, <b>‘mayo’</b>, <b>‘nuggets’</b>, <b>‘popcorn’</b>");
 }
 
