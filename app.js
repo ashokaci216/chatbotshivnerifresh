@@ -48,10 +48,12 @@ function searchProduct(query) {
 
   const results = fuse.search(query);
   if (results.length > 0) {
+    let reply = '';
     results.slice(0, 5).forEach(result => {
-      const product = result.item;
-      addMessage('bot', `✅ ${product.name} – ₹${product.price}`);
+      const p = result.item;
+      reply += `• ${p.name} – ₹${p.price}<br>`;
     });
+    addMessage('bot', reply);
   } else {
     addMessage('bot', `🙁 No results for “${query}”. Try something else.`);
   }
