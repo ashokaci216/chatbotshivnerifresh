@@ -109,3 +109,9 @@ button:hover {
 .hidden {
   display: none;
 }
+
+.message.bot {
+  font-size: 13px;
+  padding: 6px 10px;
+  line-height: 1.3;
+}
