@@ -230,11 +230,6 @@
     "category": "Can"
   },
   {
-    "name": "Item 1",
-    "price": 480.0,
-    "category": "Can"
-  },
-  {
     "name": "Laxmiraj Mixed Pickle 200 gm",
     "price": 50.0,
     "category": "Can"
@@ -251,7 +246,7 @@
   },
   {
     "name": "PC Balasmic Vinegar 500 ml",
-    "price": 324.99,
+    "price": 300,
     "category": "Can"
   },
   {
@@ -266,12 +261,12 @@
   },
   {
     "name": "Sarwar Sundried Tomato 1 kg",
-    "price": 550.0,
+    "price": 600.0,
     "category": "Can"
   },
   {
     "name": "Sarwar Water Chestnut in Water 567 gm",
-    "price": 123.18875,
+    "price":130.0,
     "category": "Can"
   },
   {
@@ -286,7 +281,7 @@
   },
   {
     "name": "Aditi Tomato Puree 850 gm",
-    "price": 60.0,
+    "price": 70.0,
     "category": "Can Product"
   },
   {
@@ -496,7 +491,7 @@
   },
   {
     "name": "Continental Strong Coffee 1 kg",
-    "price": 850.0,
+    "price": 830.0,
     "category": "Coffee"
   },
   {
@@ -525,16 +520,11 @@
     "category": "DRY YEAST"
   },
   {
-    "name": "Amul Butter 500 gm Cp",
-    "price": 590.0,
+    "name": "Amul Butter 500 gm CP",
+    "price": 305.0,
     "category": "Dairy Product"
   },
-  {
-    "name": "Amul Cheese Chiplet 25 gm",
-    "price": 610.0,
-    "category": "Dairy Product"
-  },
-  {
+    {
     "name": "Amul Cheese Cubes 1 kg (40*25gm)",
     "price": 600.0,
     "category": "Dairy Product"
@@ -551,12 +541,12 @@
   },
   {
     "name": "Amul Fresh Cream 250 ml",
-    "price": 65.0,
+    "price": 68.0,
     "category": "Dairy Product"
   },
   {
     "name": "Amul Fresh Cream1 Ltr",
-    "price": 220.0,
+    "price": 230.0,
     "category": "Dairy Product"
   },
   {
@@ -581,7 +571,7 @@
   },
   {
     "name": "Arla White Feta Cheese 500 Gm",
-    "price": 420.0,
+    "price": 380.0,
     "category": "Dairy Product"
   },
   {
@@ -592,11 +582,6 @@
   {
     "name": "Britannia Slice 765 Gm",
     "price": 400.0,
-    "category": "Dairy Product"
-  },
-  {
-    "name": "Cheese Cubes 25 gm Pc",
-    "price": 16.0,
     "category": "Dairy Product"
   },
   {
@@ -625,11 +610,6 @@
     "category": "Dairy Product"
   },
   {
-    "name": "Derista Cheese Slice pcs",
-    "price": 10.0,
-    "category": "Dairy Product"
-  },
-  {
     "name": "Derista Easy Grate Cheese 1 kg",
     "price": 520.0,
     "category": "Dairy Product"
@@ -641,17 +621,17 @@
   },
   {
     "name": "Derista Mozarella Cheese 1 kg",
-    "price": 520.0,
+    "price": 480.0,
     "category": "Dairy Product"
   },
   {
     "name": "Derista Processed Cheese Slice 780gm",
-    "price": 385.0,
+    "price": 380.0,
     "category": "Dairy Product"
   },
   {
     "name": "Derista Sandwich Slice 52",
-    "price": 370.0,
+    "price": 360.0,
     "category": "Dairy Product"
   },
   {
@@ -671,7 +651,7 @@
   },
   {
     "name": "Kesari Mangal Ghee 1kg",
-    "price": 580.0,
+    "price": 550.0,
     "category": "Dairy Product"
   },
   {
@@ -686,12 +666,12 @@
   },
   {
     "name": "Malai Paneer",
-    "price": 512.0,
+    "price": 550.0,
     "category": "Dairy Product"
   },
   {
     "name": "Mawa Fresh1 Kg",
-    "price": 360.0,
+    "price": 320.0,
     "category": "Dairy Product"
   },
   {
@@ -706,7 +686,7 @@
   },
   {
     "name": "Milky Mist Mozzarella cheese Diced 2 kg",
-    "price": 1050.0,
+    "price": 1000.0,
     "category": "Dairy Product"
   },
   {
@@ -716,12 +696,12 @@
   },
   {
     "name": "Nandini Mozarella Blend Cheese 1 kg",
-    "price": 500.0,
+    "price": 450.0,
     "category": "Dairy Product"
   },
   {
     "name": "Nandini Mozzrella Diced 1 Kg",
-    "price": 480.0,
+    "price": 445.0,
     "category": "Dairy Product"
   },
   {
@@ -731,7 +711,7 @@
   },
   {
     "name": "Nandini Slice Cheese 750 gm",
-    "price": 375.0,
+    "price": 360.0,
     "category": "Dairy Product"
   },
   {
@@ -746,12 +726,12 @@
   },
   {
     "name": "Nutralite Fat Spread 500 gm",
-    "price": 100.0,
+    "price": 90.0,
     "category": "Dairy Product"
   },
   {
     "name": "Paneer Fresh",
-    "price": 280.0,
+    "price": 260.0,
     "category": "Dairy Product"
   },
   {
@@ -765,18 +745,13 @@
     "category": "Dairy Product"
   },
   {
-    "name": "Qualita Special Cheese Block 1 kg",
-    "price": 360.0,
-    "category": "Dairy Product"
-  },
-  {
     "name": "Rich Cooking Rich Hot 1kg",
     "price": 240.0,
     "category": "Dairy Product"
   },
   {
     "name": "SF White Feta Cheese 500gm",
-    "price": 420.0,
+    "price": 360.0,
     "category": "Dairy Product"
   },
   {
@@ -795,18 +770,8 @@
     "category": "Dips and Sauces"
   },
   {
-    "name": "Caterstar Veg Deligt Mayonnaise 1KG",
-    "price": 85.0,
-    "category": "Dips and Sauces"
-  },
-  {
     "name": "Chilzo Jain Pizza Pasta Sauce 1 kg",
     "price": 330.6466666666667,
-    "category": "Dips and Sauces"
-  },
-  {
-    "name": "Cremica Caesar Dressing DIP 350gm",
-    "price": 180.0,
     "category": "Dips and Sauces"
   },
   {
@@ -920,28 +885,13 @@
     "category": "Dips and Sauces"
   },
   {
-    "name": "Ferns Biryani Paste 190 gm",
-    "price": 127.2,
-    "category": "Dips and Sauces"
-  },
-  {
-    "name": "Ferns Butter Chicken Curry Paste 190 gm",
-    "price": 120.0,
-    "category": "Dips and Sauces"
-  },
-  {
-    "name": "Ferns Garlic Pickle 190 gm",
-    "price": 74.5,
-    "category": "Dips and Sauces"
-  },
-  {
     "name": "Flying Goose Sriracha Hot Chilli Sauce 730ml",
     "price": 464.99,
     "category": "Dips and Sauces"
   },
   {
     "name": "Foodrite Schezwan Sauce Sachet",
-    "price": 170.0,
+    "price": 150.0,
     "category": "Dips and Sauces"
   },
   {
@@ -995,7 +945,7 @@
     "category": "Dips and Sauces"
   },
   {
-    "name": "Funfoods Mild &amp; Sweet Mayo 1 KG",
+    "name": "Funfoods Mild & Sweet Mayo 1 KG",
     "price": 120.0,
     "category": "Dips and Sauces"
   },
@@ -1115,11 +1065,6 @@
     "category": "Dips and Sauces"
   },
   {
-    "name": "Kissan",
-    "price": 90.0,
-    "category": "Dips and Sauces"
-  },
-  {
     "name": "Kissan Dip Sauce 930 gm",
     "price": 90.005,
     "category": "Dips and Sauces"
@@ -1136,12 +1081,12 @@
   },
   {
     "name": "Magic King Schezwan Stir Fry 1kg",
-    "price": 130.0,
+    "price": 150.0,
     "category": "Dips and Sauces"
   },
   {
     "name": "Malas Mixed Fruit Jam 1kg",
-    "price": 162.0,
+    "price": 160.0,
     "category": "Dips and Sauces"
   },
   {
@@ -1156,7 +1101,7 @@
   },
   {
     "name": "Meal Time Chocolate Delight Sauce 1 ltr",
-    "price": 210.0,
+    "price": 80.0,
     "category": "Dips and Sauces"
   },
   {
@@ -1171,7 +1116,7 @@
   },
   {
     "name": "Moi Soi Thai Green CUrry 300gm",
-    "price": 210.0,
+    "price": 200.0,
     "category": "Dips and Sauces"
   },
   {
@@ -1191,7 +1136,7 @@
   },
   {
     "name": "Nutella Cocoa Spread 750 gm",
-    "price": 720.0,
+    "price": 680.0,
     "category": "Dips and Sauces"
   },
   {
@@ -1245,7 +1190,7 @@
     "category": "Dips and Sauces"
   },
   {
-    "name": "Veeba Cheese &amp;Jalapeno Dip 1 kg",
+    "name": "Veeba Cheese &Jalapeno Dip 1 kg",
     "price": 200.0,
     "category": "Dips and Sauces"
   },
@@ -1306,7 +1251,7 @@
   },
   {
     "name": "Veeba Mexican Style Dressing 1 kg",
-    "price": 220.0,
+    "price": 200.0,
     "category": "Dips and Sauces"
   },
   {
@@ -1335,7 +1280,7 @@
     "category": "Dips and Sauces"
   },
   {
-    "name": "Veeba Pizza &amp; Pasta Sacue 1 kg",
+    "name": "Veeba Pizza & Pasta Sacue 1 kg",
     "price": 200.0,
     "category": "Dips and Sauces"
   },
@@ -1756,12 +1701,12 @@
   },
   {
     "name": "HyFun Classic Potatoes Wedges 2.5 kg",
-    "price": 550.0,
+    "price": 480.0,
     "category": "Frozen"
   },
   {
     "name": "HyFun French Fries 2.5 kg 9mm",
-    "price": 500.0,
+    "price": 360.0,
     "category": "Frozen"
   },
   {
@@ -1776,12 +1721,12 @@
   },
   {
     "name": "Hyfun French Fries 2.5 kg 6 mm",
-    "price": 380.0,
+    "price": 360.0,
     "category": "Frozen"
   },
   {
     "name": "Hyfun Hash Browm 1.5 KG",
-    "price": 300.0,
+    "price": 280.0,
     "category": "Frozen"
   },
   {
@@ -1791,7 +1736,7 @@
   },
   {
     "name": "ITC Cheese  Jalapeno Poppers 1 kg",
-    "price": 400.0,
+    "price": 360.0,
     "category": "Frozen"
   },
   {
@@ -1801,7 +1746,7 @@
   },
   {
     "name": "ITC Cheesy Pizza Fingers 1 kg",
-    "price": 400.0,
+    "price": 360.0,
     "category": "Frozen"
   },
   {
@@ -1815,7 +1760,7 @@
     "category": "Frozen"
   },
   {
-    "name": "ITC Chicken Hot &amp; Spicy Patty 1 kg",
+    "name": "ITC Chicken Hot & Spicy Patty 1 kg",
     "price": 590.0,
     "category": "Frozen"
   },
@@ -1831,12 +1776,12 @@
   },
   {
     "name": "ITC Lebanese Falafel Kabab 1KG",
-    "price": 320.0,
+    "price": 300.0,
     "category": "Frozen"
   },
   {
     "name": "ITC Onion Rings 500 gm",
-    "price": 250.0,
+    "price": 200.0,
     "category": "Frozen"
   },
   {
@@ -1856,7 +1801,7 @@
   },
   {
     "name": "Imported Basa Fish",
-    "price": 320.0,
+    "price": 260.0,
     "category": "Frozen"
   },
   {
@@ -1881,7 +1826,7 @@
   },
   {
     "name": "Iscon Balaji French Fries 9mm 2.5 kg",
-    "price": 350.0,
+    "price": 360.0,
     "category": "Frozen"
   },
   {
@@ -1896,12 +1841,12 @@
   },
   {
     "name": "Iscon Balaji Premimum Fries 1kg",
-    "price": 380.0,
+    "price": 200.0,
     "category": "Frozen"
   },
   {
     "name": "Iscon Balaji Veg Burger Patty Decker 1.2 kg",
-    "price": 240.0,
+    "price": 220.0,
     "category": "Frozen"
   },
   {
@@ -1911,7 +1856,7 @@
   },
   {
     "name": "Nutrich Boneless Fried Chicken 1 kg",
-    "price": 500.0,
+    "price": 430.0,
     "category": "Frozen"
   },
   {
@@ -1921,17 +1866,17 @@
   },
   {
     "name": "Nutrich Chicken Burger Patty 1 kg",
-    "price": 350.0,
+    "price": 330.0,
     "category": "Frozen"
   },
   {
     "name": "Nutrich Chicken Cheese Ball 1kg",
-    "price": 440.0,
+    "price": 400.0,
     "category": "Frozen"
   },
   {
     "name": "Nutrich Chicken Drumstick Coated 1 kg",
-    "price": 520.0,
+    "price": 560.0,
     "category": "Frozen"
   },
   {
@@ -1939,14 +1884,10 @@
     "price": 380.0,
     "category": "Frozen"
   },
-  {
-    "name": "Nutrich Chicken Fried WIngs 1 kg",
-    "price": 480.0,
-    "category": "Frozen"
-  },
+
   {
     "name": "Nutrich Chicken Garlic Finger 1 kg",
-    "price": 420.0,
+    "price": 380.0,
     "category": "Frozen"
   },
   {
@@ -1961,22 +1902,22 @@
   },
   {
     "name": "Nutrich Chicken Nuggets 1 kg",
-    "price": 400.0,
+    "price": 350.0,
     "category": "Frozen"
   },
   {
     "name": "Nutrich Chicken Popcorn 1 kg",
-    "price": 400.0,
+    "price": 350.0,
     "category": "Frozen"
   },
   {
     "name": "Nutrich Chicken Strips 1kg",
-    "price": 500.0,
+    "price": 430.0,
     "category": "Frozen"
   },
   {
     "name": "Nutrich Chicken Tandoori Burger 1 kg",
-    "price": 360.0,
+    "price": 280.0,
     "category": "Frozen"
   },
   {
@@ -1986,27 +1927,22 @@
   },
   {
     "name": "Nutrich Chicken WIngs Coated 1.2 kg",
-    "price": 520.0,
+    "price": 460.0,
     "category": "Frozen"
   },
   {
     "name": "PRAWNS 13/15 TAIL ON",
-    "price": 700.0,
+    "price": 800.0,
     "category": "Frozen"
   },
   {
     "name": "PRAWNS 16/20 TAIL ON",
-    "price": 750.0,
+    "price": 720.0,
     "category": "Frozen"
   },
   {
-    "name": "PRAWNS 31/40 PD",
+    "name": "PRAWNS 31/40",
     "price": 550.0,
-    "category": "Frozen"
-  },
-  {
-    "name": "PRAWNS 31/40 TAIL ON",
-    "price": 600.0,
     "category": "Frozen"
   },
   {
@@ -2476,18 +2412,13 @@
   },
   {
     "name": "Real Pineapple Juice 1 ltr",
-    "price": 130.0,
+    "price": 117.0,
     "category": "Juice"
   },
   {
     "name": "Real Pomegranate Nector 1 ltr",
     "price": 117.0,
     "category": "Juice"
-  },
-  {
-    "name": "Flavarich Kasturi Methi 100gm",
-    "price": 70.0,
-    "category": "KASTURI METHI"
   },
   {
     "name": "GC Kewra E Khaas Water 500ml",
@@ -2510,18 +2441,8 @@
     "category": "MASCARPONE"
   },
   {
-    "name": "Cremica Burger Mayo 275gm",
-    "price": 115.0,
-    "category": "MAYO"
-  },
-  {
     "name": "Cremica Lite Mayo 275gm",
     "price": 96.3,
-    "category": "MAYO"
-  },
-  {
-    "name": "Cremica Vegetarian Mayo 275gm",
-    "price": 100.0,
     "category": "MAYO"
   },
   {
@@ -2566,7 +2487,7 @@
   },
   {
     "name": "MILK FRESH",
-    "price": 67.0,
+    "price": 52.0,
     "category": "MILK AND CURD"
   },
   {
@@ -2605,11 +2526,6 @@
     "category": "MOZARELLA"
   },
   {
-    "name": "BLG Magic Masala 6 gm MRP 5",
-    "price": 50.0,
-    "category": "Masala"
-  },
-  {
     "name": "ORIKA MALABAR BLACK PEPPER",
     "price": 151.2,
     "category": "Masala"
@@ -2626,7 +2542,7 @@
   },
   {
     "name": "Prakash Kolhapuri Mutton Rassa Masala",
-    "price": 1.0,
+    "price": 30.0,
     "category": "Masala"
   },
   {
@@ -2746,7 +2662,7 @@
   },
   {
     "name": "Euro Gold Pitted Black Olives 450 gm",
-    "price": 200.0,
+    "price": 180.0,
     "category": "Olive & Olive Oil"
   },
   {
@@ -2761,12 +2677,12 @@
   },
   {
     "name": "Euro Gold Sliced Green Olives 450gm",
-    "price": 190.0,
+    "price": 180.0,
     "category": "Olive & Olive Oil"
   },
   {
     "name": "Habit Black Olive Sliced 430 gm",
-    "price": 180.0,
+    "price": 190.0,
     "category": "Olive & Olive Oil"
   },
   {
@@ -2781,12 +2697,12 @@
   },
   {
     "name": "Habit Extra Virgin Oilve Oil 1ltr Buy 1 Get 1",
-    "price": 2350.0,
+    "price": 2400.0,
     "category": "Olive & Olive Oil"
   },
   {
     "name": "Habit Green Olives Slice 430 gm",
-    "price": 180.0,
+    "price": 190.0,
     "category": "Olive & Olive Oil"
   },
   {
@@ -2811,7 +2727,7 @@
   },
   {
     "name": "Chicken Cheese Momo",
-    "price": 330.0,
+    "price": 220.0,
     "category": "Other"
   },
   {
@@ -2856,32 +2772,12 @@
   },
   {
     "name": "Habit Red Paprika Sliced 680gm",
-    "price": 180.0,
+    "price": 150.0,
     "category": "Other"
   },
   {
     "name": "Habit Silver Skin Onions 680 gm",
-    "price": 180.0,
-    "category": "Other"
-  },
-  {
-    "name": "ITEM 3",
-    "price": 297.5,
-    "category": "Other"
-  },
-  {
-    "name": "ITEM 4",
-    "price": 600.0,
-    "category": "Other"
-  },
-  {
-    "name": "Item 2",
-    "price": 480.0,
-    "category": "Other"
-  },
-  {
-    "name": "Momo other",
-    "price": 180.0,
+    "price": 150.0,
     "category": "Other"
   },
   {
@@ -2892,11 +2788,6 @@
   {
     "name": "Sandwich Bread Fr",
     "price": 80.0,
-    "category": "Other"
-  },
-  {
-    "name": "Silk Almond Milk 946 ml",
-    "price": 350.0,
     "category": "Other"
   },
   {
@@ -3586,7 +3477,7 @@
   },
   {
     "name": "WH Black Pepper Sauce 285 gm",
-    "price": 220.0016666666667,
+    "price": 220.0,
     "category": "Sauces"
   },
   {
@@ -3601,7 +3492,7 @@
   },
   {
     "name": "WH Nonveg Oyster Sauce 520 gm",
-    "price": 205.0,
+    "price": 220.0,
     "category": "Sauces"
   },
   {
@@ -4065,11 +3956,6 @@
     "category": "Seasoning & Marination"
   },
   {
-    "name": "Skylex Garam Masala 1 kg",
-    "price": 250.0,
-    "category": "Seasoning & Marination"
-  },
-  {
     "name": "Snapin Basil 3 gm",
     "price": 90.0,
     "category": "Seasoning & Marination"
@@ -4251,7 +4137,7 @@
   },
   {
     "name": "Malas Citrus Punch 750 ml",
-    "price": 269.1,
+    "price": 270.0,
     "category": "Syrup"
   },
   {
@@ -4266,7 +4152,7 @@
   },
   {
     "name": "Malas Grape Syrup 750 ml",
-    "price": 254.15,
+    "price": 270.0,
     "category": "Syrup"
   },
   {
@@ -4321,7 +4207,7 @@
   },
   {
     "name": "Malas Kokum Syrup 750 ml",
-    "price": 140.0,
+    "price": 144.0,
     "category": "Syrup"
   },
   {
@@ -4386,7 +4272,7 @@
   },
   {
     "name": "Malas Pina Colada 750 ml",
-    "price": 269.1,
+    "price": 270.0,
     "category": "Syrup"
   },
   {
@@ -4401,12 +4287,12 @@
   },
   {
     "name": "Malas Rasmalai Crush 750 ml",
-    "price": 255.0,
+    "price": 270.0,
     "category": "Syrup"
   },
   {
     "name": "Malas Raspberry Mocktail 750 ml",
-    "price": 269.1,
+    "price": 270.0,
     "category": "Syrup"
   },
   {
@@ -4486,7 +4372,7 @@
   },
   {
     "name": "Manama Mojito Lime & Mint Syrup 1Ltr",
-    "price": 420.0,
+    "price": 336.0,
     "category": "Syrup"
   },
   {
@@ -4520,11 +4406,6 @@
     "category": "Syrup"
   },
   {
-    "name": "Marim Bula Blue Curaco 1L",
-    "price": 300.0,
-    "category": "Syrup"
-  },
-  {
     "name": "Mojee Bubblegum Syrup 1ltr",
     "price": 470.0,
     "category": "Syrup"
@@ -4542,11 +4423,6 @@
   {
     "name": "Monin Bubble Gum Syrup 1ltr",
     "price": 850.0,
-    "category": "Syrup"
-  },
-  {
-    "name": "Monin Bubble Gum Syrup 700ml",
-    "price": 360.0,
     "category": "Syrup"
   },
   {
@@ -4636,7 +4512,7 @@
   },
   {
     "name": "Namjai Green Curry Paste 1 kg",
-    "price": 430.00125,
+    "price": 430.0,
     "category": "Thai"
   },
   {
