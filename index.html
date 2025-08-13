@@ -3,28 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shivneri Fresh Chatbot</title>
+  <title>Shivneri Fresh – Customer Support Chat</title>
   <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#0a7a3d" />
 </head>
 <body>
-  <div class="chat-container">
-    <div id="messages" class="messages"></div>
+  <div class="chat-container" role="main" aria-label="Shivneri Fresh Customer Chat">
+    <div id="messages" class="messages" aria-live="polite"></div>
 
-    <div id="shortcuts" class="shortcuts">
-      <button onclick="triggerSearch('Amul Cheese')">🧀 Amul Cheese</button>
-      <button onclick="triggerSearch('French Fries')">🍟 French Fries</button>
-      <button onclick="triggerSearch('Tomato Ketchup')">🍅 Tomato Ketchup</button>
-      <button id="clear-chat" class="clear-btn hidden">🧹 Clear Chat</button>
+    <div id="shortcuts" class="shortcuts" aria-label="Quick product shortcuts">
+      <button type="button" data-shortcut="Amul Mozzarella">Amul Mozzarella</button>
+      <button type="button" data-shortcut="French Fries">French Fries</button>
+      <button type="button" data-shortcut="Tomato Ketchup">Tomato Ketchup</button>
+      <button type="button" data-shortcut="Mayonnaise">Mayonnaise</button>
+    </div>
+
+    <div class="chat-controls">
+      <button id="clear-chat" class="clear-btn hidden" type="button" aria-label="Clear chat">Clear Chat</button>
     </div>
     
-    <form id="chat-form">
-      <input type="text" id="user-input" placeholder="Type a product name..." autocomplete="off" />
-      <button type="submit">Send</button>
+    <form id="chat-form" autocomplete="off">
+      <input
+        type="text"
+        id="user-input"
+        placeholder="Type a product name, brand, or category..."
+        autocomplete="off"
+        spellcheck="false"
+        aria-label="Type a product name"
+      />
+      <button type="submit" aria-label="Send message">Send</button>
     </form>
   </div>
 
+  <!-- Mini-Cart Drawer -->
+<div id="mini-cart" class="mini-cart" aria-hidden="true">
+  <div class="mini-panel" role="dialog" aria-modal="true" aria-label="Cart">
+    <div class="mini-head">
+      <strong>Cart</strong>
+      <button id="mini-close" class="mini-close" aria-label="Close">✖</button>
+    </div>
+
+    <div id="mini-lines" class="mini-lines"></div>
+
+    <div class="mini-foot">
+      <div>
+        <span>Total:</span>
+        <strong id="mini-total">₹0</strong>
+      </div>
+      <button id="mini-wa" class="mini-wa">Checkout on WhatsApp</button>
+    </div>
+  </div>
+</div>
+
+  <!-- Checkout bar -->
+  <div id="checkout-bar" class="checkout-bar">
+  <div class="cart-info">
+    <span id="cart-count">0</span> items · <span id="cart-total">₹0</span>
+    <button id="clear-cart" class="delete-btn" aria-label="Clear cart" title="Remove all items">✖</button>
+  </div>
+  <button id="whatsapp-checkout" disabled>Checkout on WhatsApp</button>
+</div>
+
+  <footer class="store-info">
+    Shivneri Fresh, Mafco Market, Shop No. A4, Vashi, Sector 18, Navi Mumbai – 400705 · 8:00 AM – 10:00 PM · WhatsApp: +91 9867378209
+  </footer>
+
   <!-- Fuse.js + App Logic -->
-  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
-  <script src="app.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  <script defer src="app.js"></script>
 </body>
 </html>
