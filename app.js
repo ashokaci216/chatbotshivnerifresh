@@ -123,12 +123,43 @@ fetch('products.json')
       return COMMON_CATEGORY_FIXES[t] || t;
     };
 
-    products = (Array.isArray(data) ? data : []).map(p => ({
-      name: String(p.name || "").trim(),
-      brand: String(p.brand || brandFromName(p.name || "")).trim(),
-      category: normalizeCategory(p.category || ""),
-      price: Number(p.price || 0)
-    }));
+    products = (Array.isArray(data) ? data : []).map(p => {
+  const nameRaw = String(p.name || "").trim();
+
+  // Try to detect brand from the start of the name using alias map (GC→Golden Crown, LKK→Lee Kum Kee, etc.)
+  let { brand: aliasBrand, consumedTokens } = detectBrandFromNameStart(nameRaw);
+
+  // If nothing matched in alias map, just take the first word as the brand (e.g., "Amul Butter" → "Amul")
+  if (!aliasBrand) {
+    const firstWord = nameRaw.split(/\s+/)[0] || "";
+    aliasBrand = firstWord;
+    consumedTokens = 1;
+  }
+
+  const canonicalBrand = aliasBrand;
+  const nameExpanded   = makeExpandedName(nameRaw, canonicalBrand, consumedTokens);
+  const category       = String(p.category || "").trim();
+  const price          = Number(p.price || 0);
+
+  // Combine raw + expanded for better search hits
+  const nameSearch = [nameRaw, nameExpanded].filter(Boolean).join(" • ");
+
+  return {
+    name: nameRaw,
+    nameExpanded,
+    nameSearch,
+    canonicalBrand,
+    category,
+    price
+  };
+});
+
+// Build a dynamic brand lookup from your catalog (so single-word brands work without manual aliases)
+window.BRAND_LOOKUP = {};
+products.forEach(p => {
+  const k = norm(p.canonicalBrand);
+  if (k && !window.BRAND_LOOKUP[k]) window.BRAND_LOOKUP[k] = p.canonicalBrand;
+});
 
     fuse = new Fuse(products, {
       keys: ['name', 'brand', 'category'],
@@ -167,21 +198,46 @@ function formatItemLine(p) {
 }
 
 function searchProduct(query) {
-  if (!fuse) { botText('Loading products… Please wait.'); return; }
-  const q = String(query || "").trim();
-  if (!q) { botText("Please type a product name like “cheese”, “mayo”, or “nachos”."); return; }
+  const raw = String(query || "").trim();
+  if (!raw) { botText('Please type a product name like "cheese", "mayo", or "nachos".'); return; }
 
-  const results = fuse.search(q);
+  // 1) Parse brand + remainder (you already have parseQueryForBrand)
+  const { brand, rest } = parseQueryForBrand(raw);
+
+  // 2) Build search list (strict brand filter if brand found)
+  let list = products;
+  if (brand) {
+    const b = brand.toLowerCase();
+    list = products.filter(p => (p.canonicalBrand || "").toLowerCase() === b);
+  }
+
+  // 3) Fuse on filtered list
+  const FUSE_OPTS = { keys: ["nameSearch","category"], threshold: 0.3, ignoreLocation: true, minMatchCharLength: 2 };
+  const q = rest || raw;
+  const localFuse = new Fuse(list, FUSE_OPTS);
+  let results = localFuse.search(q);
+
+  // 4) If brand was found but no hits, soft‑fallback to all products (still show brand note)
+  let brandNote = "";
+  if (brand && results.length === 0) {
+    brandNote = `No exact matches in ${brand}. Showing closest items.`;
+    const altFuse = new Fuse(products, FUSE_OPTS);
+    results = altFuse.search(q);
+  }
+
+  // 5) Render
   if (results.length > 0) {
-    const top = results.slice(0, 7).map(r => formatItemLine(r.item)).join('');
+    const top = results.slice(0, 7).map(r => formatItemLine(r.item)).join("");
     addMessage('bot', `
       <div class="reply-block">
+        ${brand ? `<div class="reply-note"><b>Brand:</b> ${brand}</div>` : ""}
+        ${brandNote ? `<div class="reply-note">${brandNote}</div>` : ""}
         ${top}
         <div class="reply-note">Would you like to add any of these to your cart?</div>
       </div>
     `);
   } else {
-    botText(`No results for “${q}”. Try another keyword or a brand name (e.g., Veeba, Amul, Iscon Balaji).`);
+    botText(`No results for “${raw}”. Try another keyword or a brand name (e.g., Amul, HyFun, Derista).`);
   }
 }
 
