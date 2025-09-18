@@ -466,7 +466,7 @@
   },
   {
     "name": "Cuisinary Coconut Milk Powder 1kg",
-    "price": 650.0,
+    "price": 780.0,
     "category": "Coconut"
   },
   {
@@ -1106,7 +1106,7 @@
   },
   {
     "name": "Meal Time Chocolate Delight Sauce 1 ltr",
-    "price": 80.0,
+    "price": 180.0,
     "category": "Dips and Sauces"
   },
   {
@@ -1121,12 +1121,12 @@
   },
   {
     "name": "Moi Soi Thai Green CUrry 300gm",
-    "price": 200.0,
+    "price": 210.0,
     "category": "Dips and Sauces"
   },
   {
     "name": "Moi Soi Thai Red Curry 300gm",
-    "price": 200.0,
+    "price": 210.0,
     "category": "Dips and Sauces"
   },
   {
@@ -3252,7 +3252,7 @@
   },
   {
     "name": "LKK Dark Soya sauce 500ml",
-    "price": 220.0,
+    "price": 230.0,
     "category": "Sauce"
   },
   {
@@ -3262,7 +3262,7 @@
   },
   {
     "name": "LKK Light Soya Sauce 500ml",
-    "price": 220.0,
+    "price": 230.0,
     "category": "Sauce"
   },
   {
@@ -3277,7 +3277,7 @@
   },
   {
     "name": "LKK Teriyaki Sauce 250 ml",
-    "price": 260.0,
+    "price": 280.0,
     "category": "Sauce"
   },
   {
@@ -4507,12 +4507,12 @@
   },
   {
     "name": "Kara Coconut Milk 400ml",
-    "price": 130.0,
+    "price": 150.0,
     "category": "Thai"
   },
   {
     "name": "Maggi Coconut Milk Powder 1 kg",
-    "price": 800.0,
+    "price": 895.0,
     "category": "Thai"
   },
   {
@@ -4666,5 +4666,6 @@
     "category": "imported fruit"
   }
 ]
+
 
 
