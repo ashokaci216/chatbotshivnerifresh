@@ -1,4 +1,4 @@
-// ===== Shivneri Fresh Customer Support Chat (Frontend-only) =====
+// ===== Shivneri Fresh Customer Support Chat (Frontend + Backend API) =====
 
 // ---- Config ----
 const WHATSAPP_NUMBER = "919867378209"; // +91 9867378209
@@ -9,39 +9,48 @@ let fuse;
 let cart = JSON.parse(localStorage.getItem("sf_cart") || "[]");
 
 // ---- DOM Refs ----
-const form = document.getElementById('chat-form');
-const input = document.getElementById('user-input');
-const messages = document.getElementById('messages');
-const clearBtn = document.getElementById('clear-chat');
-const shortcuts = document.getElementById('shortcuts');
+const form = document.getElementById("chat-form");
+const input = document.getElementById("user-input");
+const messages = document.getElementById("messages");
+const clearBtn = document.getElementById("clear-chat");
+const shortcuts = document.getElementById("shortcuts");
 
-const cartCountEl = document.getElementById('cart-count');
-const cartTotalEl = document.getElementById('cart-total');
-const whatsappBtn = document.getElementById('whatsapp-checkout');
-const clearCartBtn = document.getElementById('clear-cart'); // red ❌ after amount
-const checkoutInfo = document.querySelector('#checkout-bar .cart-info');
+const cartCountEl = document.getElementById("cart-count");
+const cartTotalEl = document.getElementById("cart-total");
+const whatsappBtn = document.getElementById("whatsapp-checkout");
+const clearCartBtn = document.getElementById("clear-cart");
+const checkoutInfo = document.querySelector("#checkout-bar .cart-info");
 
 // Mini-cart (drawer)
-const mini = document.getElementById('mini-cart');
-const miniLines = document.getElementById('mini-lines');
-const miniTotal = document.getElementById('mini-total');
-const miniClose = document.getElementById('mini-close');
-const miniWA = document.getElementById('mini-wa');
+const mini = document.getElementById("mini-cart");
+const miniLines = document.getElementById("mini-lines");
+const miniTotal = document.getElementById("mini-total");
+const miniClose = document.getElementById("mini-close");
+const miniWA = document.getElementById("mini-wa");
 
 // ---- Utilities ----
-const INR = new Intl.NumberFormat('en-IN', { maximumFractionDigits: 0 });
+const INR = new Intl.NumberFormat("en-IN", { maximumFractionDigits: 0 });
 const fmtINR = (n) => `₹${INR.format(Number(n || 0))}`;
 
 function escapeHTML(str = "") {
-  return str.replace(/[&<>"']/g, s => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[s]));
+  return str.replace(/[&<>"']/g, (s) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#039;",
+  }[s]));
 }
+
 function saveCart() {
   localStorage.setItem("sf_cart", JSON.stringify(cart));
   updateCheckoutBar();
 }
+
 function cartCount() {
   return cart.reduce((sum, i) => sum + (Number(i.qty) || 1), 0);
 }
+
 function cartTotal() {
   return cart.reduce((sum, i) => {
     const price = Number(i.price) || 0;
@@ -49,45 +58,49 @@ function cartTotal() {
     return sum + price * qty;
   }, 0);
 }
+
 function updateCheckoutBar() {
   const count = cartCount();
   const total = cartTotal();
   if (cartCountEl) cartCountEl.textContent = String(count);
   if (cartTotalEl) cartTotalEl.textContent = fmtINR(total);
   if (whatsappBtn) whatsappBtn.disabled = count === 0;
-  if (clearCartBtn) clearCartBtn.style.display = count ? 'inline-flex' : 'none';
+  if (clearCartBtn) clearCartBtn.style.display = count ? "inline-flex" : "none";
 }
+
 function showClearIfNeeded() {
-  if (messages.children.length >= 2) clearBtn.classList.remove('hidden');
+  if (messages.children.length >= 2) clearBtn.classList.remove("hidden");
 }
 
 // ---- Tips (light guidance) ----
 const CATEGORY_TIPS = {
-  "CHEESE": "Good for pizza, pasta, or sandwiches.",
-  "MOZZARELLA": "Melts well for pizza and pasta.",
+  CHEESE: "Good for pizza, pasta, or sandwiches.",
+  MOZZARELLA: "Melts well for pizza and pasta.",
   "FRENCH FRIES": "Ready-to-fry, great as a side or snacks.",
-  "KETCHUP": "Use for burgers, fries, or sandwiches.",
-  "SAUCE": "Useful for pasta, marinades, or dips.",
-  "MAYONNAISE": "Great for burgers, wraps, and salads.",
-  "PASTA": "Pairs well with sauce, cheese, and herbs.",
-  "NUGGETS": "Quick snack, air-fry or deep-fry.",
-  "NOODLES": "Stir-fry with veggies and sauces.",
-  "SUSHI": "Check Japanese section for nori, vinegar, rice.",
-  "OLIVE": "Nice for salads, pizzas, and sandwiches."
+  KETCHUP: "Use for burgers, fries, or sandwiches.",
+  SAUCE: "Useful for pasta, marinades, or dips.",
+  MAYONNAISE: "Great for burgers, wraps, and salads.",
+  PASTA: "Pairs well with sauce, cheese, and herbs.",
+  NUGGETS: "Quick snack, air-fry or deep-fry.",
+  NOODLES: "Stir-fry with veggies and sauces.",
+  SUSHI: "Check Japanese section for nori, vinegar, rice.",
+  OLIVE: "Nice for salads, pizzas, and sandwiches.",
 };
 
 // ---- Messaging ----
 function addMessage(sender, html) {
-  const div = document.createElement('div');
+  const div = document.createElement("div");
   div.className = `message ${sender}`;
   div.innerHTML = html;
   messages.appendChild(div);
   messages.scrollTop = messages.scrollHeight;
   showClearIfNeeded();
 }
+
 function botText(text) {
-  addMessage('bot', `<p>${escapeHTML(text)}</p>`);
+  addMessage("bot", `<p>${escapeHTML(text)}</p>`);
 }
+
 function showWelcomeMessage() {
   const hour = new Date().getHours();
   let greeting = "Welcome to Shivneri Fresh!";
@@ -96,96 +109,125 @@ function showWelcomeMessage() {
   else greeting = "Good Evening! Welcome to Shivneri Fresh!";
 
   botText(greeting);
-  botText("Search by product, brand, or category. Try: “Amul Mozzarella”, “French Fries”, “Tomato Ketchup”.");
-  botText("Need help deciding? Ask for items by category like “noodles”, “mayo”, or “olives”.");
+  botText(
+    'Search by product, brand, or category. Try: “Amul Mozzarella”, “French Fries”, “Tomato Ketchup”.'
+  );
+  botText(
+    'Need help deciding? Ask for items by category like “noodles”, “mayo”, or “olives”.'
+  );
 }
 
-// ---- Fetch products & Fuse setup ----
-fetch('products.json')
-  .then(res => {
-    if (!res.ok) throw new Error('Failed to load products.json');
+// ========================================================================
+// ==== 🔗 Fetch products (Backend first, fallback to local file) ====
+// ========================================================================
+
+fetch("https://shivneri-backend.onrender.com/api/products")
+  .then((res) => {
+    if (!res.ok) throw new Error("Backend not reachable");
     return res.json();
   })
-  .then(data => {
-    const COMMON_CATEGORY_FIXES = {
-      "BLACK OILVES": "BLACK OLIVES",
-      "OILVES": "OLIVES",
-      "CURSH": "CRUSH",
-      "PEELED TOMATO.": "PEELED TOMATO",
-      "TOMATO PURRE": "TOMATO PUREE",
-      "SUSHI VINGAR": "SUSHI VINEGAR",
-      "SEASAME OIL": "SESAME OIL",
-      "ROSEMERY": "ROSEMARY"
-    };
-    const brandFromName = (name = "") => String(name).trim().split(/\s|-/)[0];
-    const normalizeCategory = (cat = "") => {
-      const t = String(cat).trim();
-      return COMMON_CATEGORY_FIXES[t] || t;
-    };
-
-    products = (Array.isArray(data) ? data : []).map(p => {
-  const nameRaw = String(p.name || "").trim();
-
-  // Try to detect brand from the start of the name using alias map (GC→Golden Crown, LKK→Lee Kum Kee, etc.)
-  let { brand: aliasBrand, consumedTokens } = detectBrandFromNameStart(nameRaw);
-
-  // If nothing matched in alias map, just take the first word as the brand (e.g., "Amul Butter" → "Amul")
-  if (!aliasBrand) {
-    const firstWord = nameRaw.split(/\s+/)[0] || "";
-    aliasBrand = firstWord;
-    consumedTokens = 1;
-  }
-
-  const canonicalBrand = aliasBrand;
-  const nameExpanded   = makeExpandedName(nameRaw, canonicalBrand, consumedTokens);
-  const category       = String(p.category || "").trim();
-  const price          = Number(p.price || 0);
-
-  // Combine raw + expanded for better search hits
-  const nameSearch = [nameRaw, nameExpanded].filter(Boolean).join(" • ");
-
-  return {
-    name: nameRaw,
-    nameExpanded,
-    nameSearch,
-    canonicalBrand,
-    category,
-    price
-  };
-});
-
-// Build a dynamic brand lookup from your catalog (so single-word brands work without manual aliases)
-window.BRAND_LOOKUP = {};
-products.forEach(p => {
-  const k = norm(p.canonicalBrand);
-  if (k && !window.BRAND_LOOKUP[k]) window.BRAND_LOOKUP[k] = p.canonicalBrand;
-});
-
-    fuse = new Fuse(products, {
-      keys: ['name', 'brand', 'category'],
-      threshold: 0.45,
-      ignoreLocation: true,
-      includeScore: true,
-      minMatchCharLength: 2
-    });
-
-    showWelcomeMessage();
-    updateCheckoutBar();
+  .then((data) => {
+    setupProducts(data);
   })
-  .catch(() => {
-    botText("Could not load products. Please ensure products.json is present and refresh.");
+  .catch((err) => {
+    console.warn("⚠️ Backend not reachable, loading local products.json...", err);
+    fetch("products.json")
+      .then((res) => {
+        if (!res.ok) throw new Error("Local file missing");
+        return res.json();
+      })
+      .then((data) => {
+        setupProducts(data);
+      })
+      .catch(() => {
+        botText("Could not load products. Please ensure products.json is present and refresh.");
+      });
   });
 
-// ---- Search rendering ----
+// ========================================================================
+// ==== 🧩 Product normalization + Fuse setup ====
+// ========================================================================
+
+function setupProducts(data) {
+  const COMMON_CATEGORY_FIXES = {
+    "BLACK OILVES": "BLACK OLIVES",
+    OILVES: "OLIVES",
+    CURSH: "CRUSH",
+    "PEELED TOMATO.": "PEELED TOMATO",
+    "TOMATO PURRE": "TOMATO PUREE",
+    "SUSHI VINGAR": "SUSHI VINEGAR",
+    "SEASAME OIL": "SESAME OIL",
+    ROSEMERY: "ROSEMARY",
+  };
+
+  const normalizeCategory = (cat = "") => {
+    const t = String(cat).trim();
+    return COMMON_CATEGORY_FIXES[t] || t;
+  };
+
+  products = (Array.isArray(data) ? data : []).map((p) => {
+    const nameRaw = String(p.name || "").trim();
+
+    let { brand: aliasBrand, consumedTokens } = detectBrandFromNameStart(nameRaw);
+    if (!aliasBrand) {
+      const firstWord = nameRaw.split(/\s+/)[0] || "";
+      aliasBrand = firstWord;
+      consumedTokens = 1;
+    }
+
+    const canonicalBrand = aliasBrand;
+    const nameExpanded = makeExpandedName(nameRaw, canonicalBrand, consumedTokens);
+    const category = normalizeCategory(p.category);
+    const price = Number(p.price || 0);
+    const nameSearch = [nameRaw, nameExpanded].filter(Boolean).join(" • ");
+
+    return {
+      name: nameRaw,
+      nameExpanded,
+      nameSearch,
+      canonicalBrand,
+      category,
+      price,
+    };
+  });
+
+  // Dynamic brand lookup
+  window.BRAND_LOOKUP = {};
+  products.forEach((p) => {
+    const k = norm(p.canonicalBrand);
+    if (k && !window.BRAND_LOOKUP[k]) window.BRAND_LOOKUP[k] = p.canonicalBrand;
+  });
+
+  fuse = new Fuse(products, {
+    keys: ["name", "brand", "category"],
+    threshold: 0.45,
+    ignoreLocation: true,
+    includeScore: true,
+    minMatchCharLength: 2,
+  });
+
+  showWelcomeMessage();
+  updateCheckoutBar();
+  console.log("✅ Products loaded successfully:", products.length);
+}
+
+// ========================================================================
+// ==== 🔍 Search rendering ====
+// ========================================================================
+
 function formatItemLine(p) {
   const name = escapeHTML(p.name);
-  const price = Number.isFinite(p.price) ? fmtINR(p.price) : escapeHTML(String(p.price || ""));
-  const tipKey = Object.keys(CATEGORY_TIPS).find(k =>
-    p.category.toUpperCase().includes(k) || p.name.toUpperCase().includes(k)
+  const price = Number.isFinite(p.price)
+    ? fmtINR(p.price)
+    : escapeHTML(String(p.price || ""));
+  const tipKey = Object.keys(CATEGORY_TIPS).find(
+    (k) =>
+      p.category.toUpperCase().includes(k) ||
+      p.name.toUpperCase().includes(k)
   );
   const tip = tipKey ? CATEGORY_TIPS[tipKey] : "";
   const safeTip = tip ? ` <span class="tip">· ${escapeHTML(tip)}</span>` : "";
-  const id = btoa(unescape(encodeURIComponent(`${p.name}|${p.price}`))); // stable id
+  const id = btoa(unescape(encodeURIComponent(`${p.name}|${p.price}`)));
 
   return `
     <div class="result-line">
@@ -199,25 +241,31 @@ function formatItemLine(p) {
 
 function searchProduct(query) {
   const raw = String(query || "").trim();
-  if (!raw) { botText('Please type a product name like "cheese", "mayo", or "nachos".'); return; }
+  if (!raw) {
+    botText('Please type a product name like "cheese", "mayo", or "nachos".');
+    return;
+  }
 
-  // 1) Parse brand + remainder (you already have parseQueryForBrand)
   const { brand, rest } = parseQueryForBrand(raw);
-
-  // 2) Build search list (strict brand filter if brand found)
   let list = products;
   if (brand) {
     const b = brand.toLowerCase();
-    list = products.filter(p => (p.canonicalBrand || "").toLowerCase() === b);
+    list = products.filter(
+      (p) => (p.canonicalBrand || "").toLowerCase() === b
+    );
   }
 
-  // 3) Fuse on filtered list
-  const FUSE_OPTS = { keys: ["nameSearch","category"], threshold: 0.3, ignoreLocation: true, minMatchCharLength: 2 };
+  const FUSE_OPTS = {
+    keys: ["nameSearch", "category"],
+    threshold: 0.3,
+    ignoreLocation: true,
+    minMatchCharLength: 2,
+  };
+
   const q = rest || raw;
   const localFuse = new Fuse(list, FUSE_OPTS);
   let results = localFuse.search(q);
 
-  // 4) If brand was found but no hits, soft‑fallback to all products (still show brand note)
   let brandNote = "";
   if (brand && results.length === 0) {
     brandNote = `No exact matches in ${brand}. Showing closest items.`;
@@ -225,37 +273,53 @@ function searchProduct(query) {
     results = altFuse.search(q);
   }
 
-  // 5) Render
   if (results.length > 0) {
-    const top = results.slice(0, 7).map(r => formatItemLine(r.item)).join("");
-    addMessage('bot', `
+    const top = results.slice(0, 7).map((r) => formatItemLine(r.item)).join("");
+    addMessage(
+      "bot",
+      `
       <div class="reply-block">
         ${brand ? `<div class="reply-note"><b>Brand:</b> ${brand}</div>` : ""}
         ${brandNote ? `<div class="reply-note">${brandNote}</div>` : ""}
         ${top}
         <div class="reply-note">Would you like to add any of these to your cart?</div>
       </div>
-    `);
+    `
+    );
   } else {
-    botText(`No results for “${raw}”. Try another keyword or a brand name (e.g., Amul, HyFun, Derista).`);
+    botText(
+      `No results for “${raw}”. Try another keyword or a brand name (e.g., Amul, HyFun, Derista).`
+    );
   }
 }
 
-// ---- Cart ops ----
+// ========================================================================
+// ==== 🛒 Cart Operations ====
+// ========================================================================
+
 function addToCartById(id) {
   try {
     const decoded = decodeURIComponent(escape(atob(id)));
-    const [nm, pr] = decoded.split('|');
+    const [nm, pr] = decoded.split("|");
 
-    const item = products.find(p => String(p.name) === nm && String(p.price) === pr);
-    if (!item) { botText("This item is not available right now."); return; }
+    const item = products.find(
+      (p) => String(p.name) === nm && String(p.price) === pr
+    );
+    if (!item) {
+      botText("This item is not available right now.");
+      return;
+    }
 
-    const existing = cart.find(c => c.name === item.name && String(c.price) === String(item.price));
+    const existing = cart.find(
+      (c) => c.name === item.name && String(c.price) === String(item.price)
+    );
     if (existing) existing.qty = (Number(existing.qty) || 1) + 1;
     else cart.push({ name: item.name, price: item.price, qty: 1 });
 
     saveCart();
-    botText(`Added: ${item.name} – ${fmtINR(item.price)}. Cart items: ${cartCount()}.`);
+    botText(
+      `Added: ${item.name} – ${fmtINR(item.price)}. Cart items: ${cartCount()}.`
+    );
   } catch {
     botText("Could not add this item. Please try again.");
   }
@@ -263,57 +327,63 @@ function addToCartById(id) {
 
 function clearCart() {
   cart = [];
-  try { localStorage.removeItem("sf_cart"); } catch(e){}
+  try {
+    localStorage.removeItem("sf_cart");
+  } catch (e) {}
   updateCheckoutBar();
-  if (typeof renderMiniCart === 'function') renderMiniCart();
+  if (typeof renderMiniCart === "function") renderMiniCart();
   botText("Cart cleared.");
 }
 
-// ---- WhatsApp payload & open ----
+// ========================================================================
+// ==== 📲 WhatsApp Checkout ====
+// ========================================================================
+
 function buildWhatsAppMessage() {
   if (!cart.length) return "Hello, I would like to order.";
-  const lines = cart.map((c, i) =>
-    `${i + 1}. ${c.name} x ${c.qty || 1} – ${fmtINR(c.price)}`
+  const lines = cart.map(
+    (c, i) => `${i + 1}. ${c.name} x ${c.qty || 1} – ${fmtINR(c.price)}`
   );
   const total = cartTotal();
-  return encodeURIComponent([
-    "Hello, I would like to order:",
-    ...lines,
-    "",
-    `Total: ${fmtINR(total)}`,
-    "",
-    "Customer details:",
-    "Name:",
-    "Address:",
-    "Phone:"
-  ].join("\n"));
+  return encodeURIComponent(
+    [
+      "Hello, I would like to order:",
+      ...lines,
+      "",
+      `Total: ${fmtINR(total)}`,
+      "",
+      "Customer details:",
+      "Name:",
+      "Address:",
+      "Phone:",
+    ].join("\n")
+  );
 }
 
 function openWhatsAppCheckout() {
   if (!cart.length) return;
-
   const text = buildWhatsAppMessage();
-  const url  = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
   window.open(url, "_blank");
-
-  // ✅ Auto-clear the cart after opening WhatsApp
   clearCart();
-
-  // ✅ Clear chat history + welcome again
-  messages.innerHTML = '';
-  clearBtn.classList.add('hidden');
+  messages.innerHTML = "";
+  clearBtn.classList.add("hidden");
   showWelcomeMessage();
 }
 
-// ---- Mini-Cart Drawer ----
+// ========================================================================
+// ==== 🧾 Mini-Cart Drawer ====
+// ========================================================================
+
 function openMiniCart() {
   if (!mini) return;
-  mini.classList.add('show');
-  mini.setAttribute('aria-hidden','false');
+  mini.classList.add("show");
+  mini.setAttribute("aria-hidden", "false");
 }
+
 function closeMiniCart() {
-  mini?.classList.remove('show');
-  mini?.setAttribute('aria-hidden','true');
+  mini?.classList.remove("show");
+  mini?.setAttribute("aria-hidden", "true");
 }
 
 function renderMiniCart() {
@@ -323,96 +393,118 @@ function renderMiniCart() {
     miniTotal.textContent = fmtINR(0);
     return;
   }
-  miniLines.innerHTML = cart.map((c, i) => `
+  miniLines.innerHTML = cart
+    .map(
+      (c, i) => `
     <div class="mini-line" data-i="${i}">
       <div class="mini-name">${escapeHTML(c.name)}</div>
       <div class="qty" role="group" aria-label="Quantity">
         <button class="q-dec" aria-label="Decrease quantity">–</button>
-        <span class="q-val">${Number(c.qty)||1}</span>
+        <span class="q-val">${Number(c.qty) || 1}</span>
         <button class="q-inc" aria-label="Increase quantity">+</button>
       </div>
-      <div class="mini-price">${fmtINR((Number(c.qty)||1) * (Number(c.price)||0))}</div>
+      <div class="mini-price">${fmtINR(
+        (Number(c.qty) || 1) * (Number(c.price) || 0)
+      )}</div>
       <button class="mini-remove" aria-label="Remove item">✖</button>
     </div>
-  `).join('');
+  `
+    )
+    .join("");
   miniTotal.textContent = fmtINR(cartTotal());
 }
 
-// Drawer events
-checkoutInfo?.addEventListener('click', () => { renderMiniCart(); openMiniCart(); });
-miniClose?.addEventListener('click', closeMiniCart);
-mini?.addEventListener('click', (e) => { if (e.target === mini) closeMiniCart(); });
-document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMiniCart(); });
+checkoutInfo?.addEventListener("click", () => {
+  renderMiniCart();
+  openMiniCart();
+});
+miniClose?.addEventListener("click", closeMiniCart);
+mini?.addEventListener("click", (e) => {
+  if (e.target === mini) closeMiniCart();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeMiniCart();
+});
 
-// Qty & delete inside drawer (delegation)
-miniLines?.addEventListener('click', (e) => {
-  const row = e.target.closest('.mini-line'); if (!row) return;
+miniLines?.addEventListener("click", (e) => {
+  const row = e.target.closest(".mini-line");
+  if (!row) return;
   const idx = Number(row.dataset.i);
-  const item = cart[idx]; if (!item) return;
+  const item = cart[idx];
+  if (!item) return;
 
-  if (e.target.classList.contains('q-inc')) {
-    item.qty = (Number(item.qty)||1) + 1;
-  } else if (e.target.classList.contains('q-dec')) {
-    const newQty = (Number(item.qty)||1) - 1;
-    if (newQty <= 0) { cart.splice(idx, 1); } else { item.qty = newQty; }
-  } else if (e.target.classList.contains('mini-remove')) {
+  if (e.target.classList.contains("q-inc")) {
+    item.qty = (Number(item.qty) || 1) + 1;
+  } else if (e.target.classList.contains("q-dec")) {
+    const newQty = (Number(item.qty) || 1) - 1;
+    if (newQty <= 0) {
+      cart.splice(idx, 1);
+    } else {
+      item.qty = newQty;
+    }
+  } else if (e.target.classList.contains("mini-remove")) {
     cart.splice(idx, 1);
-  } else { return; }
+  } else {
+    return;
+  }
 
   saveCart();
   updateCheckoutBar();
   renderMiniCart();
 });
 
-// Drawer checkout uses same flow
-miniWA?.addEventListener('click', () => { closeMiniCart(); openWhatsAppCheckout(); });
+miniWA?.addEventListener("click", () => {
+  closeMiniCart();
+  openWhatsAppCheckout();
+});
 
-// ---- Events: chat & shortcuts & add-to-cart ----
-form.addEventListener('submit', e => {
+// ========================================================================
+// ==== ✉️ Events ====
+// ========================================================================
+
+form.addEventListener("submit", (e) => {
   e.preventDefault();
   const query = input.value.trim();
-  if (query) addMessage('user', escapeHTML(query));
+  if (query) addMessage("user", escapeHTML(query));
   searchProduct(query);
-  input.value = '';
+  input.value = "";
 });
 
-clearBtn.addEventListener('click', () => {
-  messages.innerHTML = '';
+clearBtn.addEventListener("click", () => {
+  messages.innerHTML = "";
   showWelcomeMessage();
-  clearBtn.classList.add('hidden');
+  clearBtn.classList.add("hidden");
 });
 
-shortcuts?.addEventListener('click', (e) => {
-  const btn = e.target.closest('button[data-shortcut]');
+shortcuts?.addEventListener("click", (e) => {
+  const btn = e.target.closest("button[data-shortcut]");
   if (!btn) return;
-  const term = btn.getAttribute('data-shortcut');
-  addMessage('user', escapeHTML(term));
+  const term = btn.getAttribute("data-shortcut");
+  addMessage("user", escapeHTML(term));
   searchProduct(term);
 });
 
-messages.addEventListener('click', (e) => {
-  const btn = e.target.closest('button[data-add]');
+messages.addEventListener("click", (e) => {
+  const btn = e.target.closest("button[data-add]");
   if (!btn) return;
-  const id = btn.getAttribute('data-add');
+  const id = btn.getAttribute("data-add");
   addToCartById(id);
 });
 
-// WhatsApp checkout + red ❌ clear
-whatsappBtn.addEventListener('click', openWhatsAppCheckout);
-clearCartBtn?.addEventListener('click', clearCart);
+whatsappBtn.addEventListener("click", openWhatsAppCheckout);
+clearCartBtn?.addEventListener("click", clearCart);
 
-// ---- Initial fallback hello if fetch is slow ----
 if (messages.children.length === 0) {
-  setTimeout(() => { if (!messages.children.length) botText("Loading…"); }, 500);
+  setTimeout(() => {
+    if (!messages.children.length) botText("Loading…");
+  }, 500);
 }
 
-// Back-compat: allow inline triggerSearch('Term')
-window.triggerSearch = function(term) {
+window.triggerSearch = function (term) {
   const q = String(term || "").trim();
   if (!q) return;
-  addMessage('user', escapeHTML(q));
+  addMessage("user", escapeHTML(q));
   searchProduct(q);
 };
 
-// Ensure summary shows correct state on first load
 updateCheckoutBar();
