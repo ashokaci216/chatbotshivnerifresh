@@ -1,12 +1,25 @@
 // api/chat.js
 import OpenAI from "openai";
 
+const client = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+});
+
 export default async function handler(req, res) {
   try {
-    const { message } = req.body;
-    const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+    // Handle GET requests (for testing)
+    if (req.method === "GET") {
+      return res.status(200).json({ message: "Chat API ready ✅" });
+    }
 
-    const completion = await openai.chat.completions.create({
+    // Handle POST requests
+    const { message } = req.body || {};
+
+    if (!message) {
+      return res.status(400).json({ error: "Missing message field" });
+    }
+
+    const completion = await client.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
         { role: "system", content: "You are Shivneri Fresh grocery assistant." },
@@ -14,8 +27,13 @@ export default async function handler(req, res) {
       ],
     });
 
-    res.status(200).json({ reply: completion.choices[0].message.content });
-  } catch (err) {
-    res.status(500).json({ error: err.message });
+    const reply = completion.choices?.[0]?.message?.content || "No response.";
+    res.status(200).json({ reply });
+  } catch (error) {
+    console.error("Server error:", error);
+    res.status(500).json({
+      error: "Internal Server Error",
+      details: error.message,
+    });
   }
 }
