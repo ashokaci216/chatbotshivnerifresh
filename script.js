@@ -8,7 +8,7 @@ window.norm = (s = "") =>
     .replace(/[^\p{L}\p{N}\s]/gu, "")
     .replace(/\s+/g, " ");
 
-// ---- Brand aliases (final starting set) ----
+// ---- Brand aliases ----
 window.BRAND_ALIASES = {
   "Golden Crown": ["gc", "golden crown"],
   "Lee Kum Kee": ["lkk", "lee kum kee"],
@@ -24,7 +24,7 @@ window.BRAND_ALIASES = {
   "Fresh2Go": ["fresh2go", "fresh 2 go", "fresh-2-go"]
 };
 
-// Reverse lookup for fast alias→brand
+// Reverse lookup for alias→brand
 window.ALIAS_TO_BRAND = (() => {
   const m = {};
   for (const [brand, aliases] of Object.entries(window.BRAND_ALIASES)) {
@@ -73,20 +73,13 @@ window.parseQueryForBrand = function (q) {
 
   const t1 = tokens[0];
   const t2 = tokens[1] ? `${tokens[0]} ${tokens[1]}` : null;
-
   let brand = null, drop = 0;
 
   if (t2 && window.ALIAS_TO_BRAND[t2]) { brand = window.ALIAS_TO_BRAND[t2]; drop = 2; }
   else if (window.ALIAS_TO_BRAND[t1]) { brand = window.ALIAS_TO_BRAND[t1]; drop = 1; }
 
-  if (!brand && window.BRAND_LOOKUP) {
-    if (t2 && window.BRAND_LOOKUP[t2]) { brand = window.BRAND_LOOKUP[t2]; drop = 2; }
-    else if (window.BRAND_LOOKUP[t1]) { brand = window.BRAND_LOOKUP[t1]; drop = 1; }
-  }
-
   const restTokens = tokens.slice(drop);
   const expanded = restTokens.map(tok => window.KEYWORD_SYNONYMS[tok] || tok);
-
   return { brand, rest: expanded.join(" ").trim() };
 };
 
@@ -173,8 +166,33 @@ window.rankAndRender = function (pool, queryText, brand) {
   }
 };
 
-// ===== Shivneri Fresh Chat Connection (Frontend to API) =====
+// ===== Local Rate / Price Handling + Chat Connection =====
 
+// Detect if user is asking for rate/price
+function checkPriceQuery(userInput) {
+  const lower = userInput.toLowerCase();
+  return (
+    lower.includes("price") ||
+    lower.includes("rate") ||
+    lower.includes("kitna") ||
+    lower.includes("rs") ||
+    lower.includes("rup")
+  );
+}
+
+// Find product in your loaded JSON list (fuzzy match)
+function findLocalProduct(query) {
+  if (!window.products || !window.products.length) return null;
+  const fuse = new Fuse(window.products, {
+    keys: ["name", "category"],
+    threshold: 0.3,
+    ignoreLocation: true
+  });
+  const res = fuse.search(query);
+  return res.length ? res[0].item : null;
+}
+
+// Main chat form listener
 document.getElementById("chat-form").addEventListener("submit", async (e) => {
   e.preventDefault();
   const input = document.getElementById("user-input");
@@ -184,6 +202,29 @@ document.getElementById("chat-form").addEventListener("submit", async (e) => {
   addMessage("You", message);
   input.value = "";
 
+  // 1️⃣ Check if asking for price locally
+  if (checkPriceQuery(message)) {
+    const match = findLocalProduct(message);
+    if (match) {
+      addMessage(
+        "Shivneri Bot",
+        `${match.name} – ₹${match.price}. ${match.description || ""}<br>[Add to Cart]`
+      );
+      return;
+    }
+  }
+
+  // 2️⃣ Check if product keyword matches locally
+  const match = findLocalProduct(message);
+  if (match) {
+    addMessage(
+      "Shivneri Bot",
+      `${match.name} – ₹${match.price}. ${match.description || ""}<br>[Add to Cart]`
+    );
+    return;
+  }
+
+  // 3️⃣ Else fallback to backend API (OpenAI)
   try {
     const res = await fetch("/api/chat", {
       method: "POST",
@@ -192,7 +233,6 @@ document.getElementById("chat-form").addEventListener("submit", async (e) => {
     });
 
     const data = await res.json();
-
     if (data.reply) {
       addMessage("Shivneri Bot", data.reply);
     } else {
@@ -204,6 +244,7 @@ document.getElementById("chat-form").addEventListener("submit", async (e) => {
   }
 });
 
+// Add message to chat window
 function addMessage(sender, text) {
   const chatBox = document.getElementById("messages");
   const msgDiv = document.createElement("div");
