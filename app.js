@@ -469,13 +469,39 @@ form.addEventListener("submit", async (e) => {
 
   addMessage("user", escapeHTML(userInput)); // show user message
 
-  // 1️⃣ Try local product match
-  const found = queryMatchesProductList(userInput);
+  // Normalize query
+  const qNorm = norm(userInput);
 
-  if (found) {
-    searchProduct(userInput);
+  // 🔍 1️⃣ Try exact or partial match from Shivneri products
+  const matchedProducts = products.filter((p) => {
+    const name = norm(p.name);
+    const cat = norm(p.category);
+    const brand = norm(p.canonicalBrand || "");
+    return (
+      name.includes(qNorm) ||
+      cat.includes(qNorm) ||
+      brand.includes(qNorm) ||
+      qNorm.includes(name.split(" ")[0]) // starts-with
+    );
+  });
+
+  if (matchedProducts.length > 0) {
+    // Local Shivneri product match → show instantly
+    const top = matchedProducts
+      .slice(0, 7)
+      .map(formatItemLine)
+      .join("");
+    addMessage(
+      "bot",
+      `
+      <div class="reply-block">
+        ${top}
+        <div class="reply-note">Found in Shivneri Fresh catalog ✅</div>
+      </div>
+    `
+    );
   } else {
-    // 2️⃣ If not found locally → ask OpenAI
+    // 💬 2️⃣ No match → ask OpenAI backend
     await callChatAPI(userInput);
   }
 
@@ -483,16 +509,24 @@ form.addEventListener("submit", async (e) => {
 });
 
 // ===== Parallel AI Chat Logic =====
+async function callChatAPI(userInput) {
+  try {
+    const res = await fetch("/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: userInput }),
+    });
 
-// Check if the user's query matches any local product
-function queryMatchesProductList(query) {
-  if (!products || !products.length) return false;
-  const normQuery = norm(query);
-  return products.some(
-    (p) =>
-      norm(p.name).includes(normQuery) ||
-      norm(p.category).includes(normQuery)
-  );
+    const data = await res.json();
+    if (data.reply) {
+      botText(data.reply);
+    } else {
+      botText("Sorry, I couldn’t find anything for that.");
+    }
+  } catch (err) {
+    console.error("Error contacting AI:", err);
+    botText("⚠️ Unable to connect to the server. Please try again later.");
+  }
 }
 
 // Call backend OpenAI route (/api/chat)
