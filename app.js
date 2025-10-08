@@ -72,7 +72,7 @@ function showClearIfNeeded() {
   if (messages.children.length >= 2) clearBtn.classList.remove("hidden");
 }
 
-// ---- Tips (light guidance) ----
+// ---- Tips ----
 const CATEGORY_TIPS = {
   CHEESE: "Good for pizza, pasta, or sandwiches.",
   MOZZARELLA: "Melts well for pizza and pasta.",
@@ -120,15 +120,12 @@ function showWelcomeMessage() {
 // ========================================================================
 // ==== 🔗 Fetch products (Backend first, fallback to local file) ====
 // ========================================================================
-
 fetch("https://shivneri-backend.onrender.com/api/products")
   .then((res) => {
     if (!res.ok) throw new Error("Backend not reachable");
     return res.json();
   })
-  .then((data) => {
-    setupProducts(data);
-  })
+  .then((data) => setupProducts(data))
   .catch((err) => {
     console.warn("⚠️ Backend not reachable, loading local products.json...", err);
     fetch("products.json")
@@ -136,9 +133,7 @@ fetch("https://shivneri-backend.onrender.com/api/products")
         if (!res.ok) throw new Error("Local file missing");
         return res.json();
       })
-      .then((data) => {
-        setupProducts(data);
-      })
+      .then((data) => setupProducts(data))
       .catch(() => {
         botText("Could not load products. Please ensure products.json is present and refresh.");
       });
@@ -147,7 +142,6 @@ fetch("https://shivneri-backend.onrender.com/api/products")
 // ========================================================================
 // ==== 🧩 Product normalization + Fuse setup ====
 // ========================================================================
-
 function setupProducts(data) {
   const COMMON_CATEGORY_FIXES = {
     "BLACK OILVES": "BLACK OLIVES",
@@ -167,7 +161,6 @@ function setupProducts(data) {
 
   products = (Array.isArray(data) ? data : []).map((p) => {
     const nameRaw = String(p.name || "").trim();
-
     let { brand: aliasBrand, consumedTokens } = detectBrandFromNameStart(nameRaw);
     if (!aliasBrand) {
       const firstWord = nameRaw.split(/\s+/)[0] || "";
@@ -214,7 +207,6 @@ function setupProducts(data) {
 // ========================================================================
 // ==== 🔍 Search rendering ====
 // ========================================================================
-
 function formatItemLine(p) {
   const name = escapeHTML(p.name);
   const price = Number.isFinite(p.price)
@@ -239,69 +231,33 @@ function formatItemLine(p) {
   `;
 }
 
-function searchProduct(query) {
-  const raw = String(query || "").trim();
-  if (!raw) {
-    botText('Please type a product name like "cheese", "mayo", or "nachos".');
-    return;
-  }
+// ========================================================================
+// ==== 🧠 Smart Shivneri Local Product Detection ====
+// ========================================================================
+function findMatchingProducts(query) {
+  if (!products || !products.length) return [];
+  const q = norm(query);
 
-  const { brand, rest } = parseQueryForBrand(raw);
-  let list = products;
-  if (brand) {
-    const b = brand.toLowerCase();
-    list = products.filter(
-      (p) => (p.canonicalBrand || "").toLowerCase() === b
+  return products.filter((p) => {
+    const name = norm(p.name);
+    const cat = norm(p.category);
+    const brand = norm(p.canonicalBrand || "");
+    return (
+      q.includes(name) ||
+      name.includes(q) ||
+      q.includes(brand) ||
+      q.includes(cat)
     );
-  }
-
-  const FUSE_OPTS = {
-    keys: ["nameSearch", "category"],
-    threshold: 0.3,
-    ignoreLocation: true,
-    minMatchCharLength: 2,
-  };
-
-  const q = rest || raw;
-  const localFuse = new Fuse(list, FUSE_OPTS);
-  let results = localFuse.search(q);
-
-  let brandNote = "";
-  if (brand && results.length === 0) {
-    brandNote = `No exact matches in ${brand}. Showing closest items.`;
-    const altFuse = new Fuse(products, FUSE_OPTS);
-    results = altFuse.search(q);
-  }
-
-  if (results.length > 0) {
-    const top = results.slice(0, 7).map((r) => formatItemLine(r.item)).join("");
-    addMessage(
-      "bot",
-      `
-      <div class="reply-block">
-        ${brand ? `<div class="reply-note"><b>Brand:</b> ${brand}</div>` : ""}
-        ${brandNote ? `<div class="reply-note">${brandNote}</div>` : ""}
-        ${top}
-        <div class="reply-note">Would you like to add any of these to your cart?</div>
-      </div>
-    `
-    );
-  } else {
-    botText(
-      `No results for “${raw}”. Try another keyword or a brand name (e.g., Amul, HyFun, Derista).`
-    );
-  }
+  });
 }
 
 // ========================================================================
 // ==== 🛒 Cart Operations ====
 // ========================================================================
-
 function addToCartById(id) {
   try {
     const decoded = decodeURIComponent(escape(atob(id)));
     const [nm, pr] = decoded.split("|");
-
     const item = products.find(
       (p) => String(p.name) === nm && String(p.price) === pr
     );
@@ -317,9 +273,7 @@ function addToCartById(id) {
     else cart.push({ name: item.name, price: item.price, qty: 1 });
 
     saveCart();
-    botText(
-      `Added: ${item.name} – ${fmtINR(item.price)}. Cart items: ${cartCount()}.`
-    );
+    botText(`Added: ${item.name} – ${fmtINR(item.price)}. Cart items: ${cartCount()}.`);
   } catch {
     botText("Could not add this item. Please try again.");
   }
@@ -338,7 +292,6 @@ function clearCart() {
 // ========================================================================
 // ==== 📲 WhatsApp Checkout ====
 // ========================================================================
-
 function buildWhatsAppMessage() {
   if (!cart.length) return "Hello, I would like to order.";
   const lines = cart.map(
@@ -372,122 +325,20 @@ function openWhatsAppCheckout() {
 }
 
 // ========================================================================
-// ==== 🧾 Mini-Cart Drawer ====
-// ========================================================================
-
-function openMiniCart() {
-  if (!mini) return;
-  mini.classList.add("show");
-  mini.setAttribute("aria-hidden", "false");
-}
-
-function closeMiniCart() {
-  mini?.classList.remove("show");
-  mini?.setAttribute("aria-hidden", "true");
-}
-
-function renderMiniCart() {
-  if (!miniLines) return;
-  if (!cart.length) {
-    miniLines.innerHTML = `<div class="message bot">Cart is empty.</div>`;
-    miniTotal.textContent = fmtINR(0);
-    return;
-  }
-  miniLines.innerHTML = cart
-    .map(
-      (c, i) => `
-    <div class="mini-line" data-i="${i}">
-      <div class="mini-name">${escapeHTML(c.name)}</div>
-      <div class="qty" role="group" aria-label="Quantity">
-        <button class="q-dec" aria-label="Decrease quantity">–</button>
-        <span class="q-val">${Number(c.qty) || 1}</span>
-        <button class="q-inc" aria-label="Increase quantity">+</button>
-      </div>
-      <div class="mini-price">${fmtINR(
-        (Number(c.qty) || 1) * (Number(c.price) || 0)
-      )}</div>
-      <button class="mini-remove" aria-label="Remove item">✖</button>
-    </div>
-  `
-    )
-    .join("");
-  miniTotal.textContent = fmtINR(cartTotal());
-}
-
-checkoutInfo?.addEventListener("click", () => {
-  renderMiniCart();
-  openMiniCart();
-});
-miniClose?.addEventListener("click", closeMiniCart);
-mini?.addEventListener("click", (e) => {
-  if (e.target === mini) closeMiniCart();
-});
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closeMiniCart();
-});
-
-miniLines?.addEventListener("click", (e) => {
-  const row = e.target.closest(".mini-line");
-  if (!row) return;
-  const idx = Number(row.dataset.i);
-  const item = cart[idx];
-  if (!item) return;
-
-  if (e.target.classList.contains("q-inc")) {
-    item.qty = (Number(item.qty) || 1) + 1;
-  } else if (e.target.classList.contains("q-dec")) {
-    const newQty = (Number(item.qty) || 1) - 1;
-    if (newQty <= 0) {
-      cart.splice(idx, 1);
-    } else {
-      item.qty = newQty;
-    }
-  } else if (e.target.classList.contains("mini-remove")) {
-    cart.splice(idx, 1);
-  } else {
-    return;
-  }
-
-  saveCart();
-  updateCheckoutBar();
-  renderMiniCart();
-});
-
-miniWA?.addEventListener("click", () => {
-  closeMiniCart();
-  openWhatsAppCheckout();
-});
-
-// ========================================================================
 // ==== ✉️ Events ====
 // ========================================================================
-
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const userInput = input.value.trim();
   if (!userInput) return;
 
-  addMessage("user", escapeHTML(userInput)); // show user message
+  addMessage("user", escapeHTML(userInput));
 
-  // Normalize query
-  const qNorm = norm(userInput);
+  // 1️⃣ Check local Shivneri products first
+  const matches = findMatchingProducts(userInput);
 
-  // 🔍 1️⃣ Try exact or partial match from Shivneri products
-  const matchedProducts = products.filter((p) => {
-    const name = norm(p.name);
-    const cat = norm(p.category);
-    const brand = norm(p.canonicalBrand || "");
-    return (
-      name.includes(qNorm) ||
-      cat.includes(qNorm) ||
-      brand.includes(qNorm) ||
-      qNorm.includes(name.split(" ")[0]) // starts-with
-    );
-  });
-
-  if (matchedProducts.length > 0) {
-    // Local Shivneri product match → show instantly
-    const top = matchedProducts
+  if (matches.length > 0) {
+    const top = matches
       .slice(0, 7)
       .map(formatItemLine)
       .join("");
@@ -501,14 +352,16 @@ form.addEventListener("submit", async (e) => {
     `
     );
   } else {
-    // 💬 2️⃣ No match → ask OpenAI backend
+    // 2️⃣ Fallback → ask AI
     await callChatAPI(userInput);
   }
 
   input.value = "";
 });
 
-// ===== Parallel AI Chat Logic =====
+// ========================================================================
+// ==== 🧠 AI Chat API ====
+// ========================================================================
 async function callChatAPI(userInput) {
   try {
     const res = await fetch("/api/chat", {
@@ -518,32 +371,8 @@ async function callChatAPI(userInput) {
     });
 
     const data = await res.json();
-    if (data.reply) {
-      botText(data.reply);
-    } else {
-      botText("Sorry, I couldn’t find anything for that.");
-    }
-  } catch (err) {
-    console.error("Error contacting AI:", err);
-    botText("⚠️ Unable to connect to the server. Please try again later.");
-  }
-}
-
-// Call backend OpenAI route (/api/chat)
-async function callChatAPI(userInput) {
-  try {
-    const res = await fetch("/api/chat", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message: userInput }),
-    });
-
-    const data = await res.json();
-    if (data.reply) {
-      botText(data.reply);
-    } else {
-      botText("Sorry, I couldn’t find anything for that.");
-    }
+    if (data.reply) botText(data.reply);
+    else botText("Sorry, I couldn’t find anything for that.");
   } catch (err) {
     console.error("Error contacting AI:", err);
     botText("⚠️ Unable to connect to the server. Please try again later.");
@@ -561,7 +390,14 @@ shortcuts?.addEventListener("click", (e) => {
   if (!btn) return;
   const term = btn.getAttribute("data-shortcut");
   addMessage("user", escapeHTML(term));
-  searchProduct(term);
+  const matches = findMatchingProducts(term);
+  if (matches.length > 0) {
+    const top = matches.slice(0, 7).map(formatItemLine).join("");
+    addMessage(
+      "bot",
+      `<div class="reply-block">${top}<div class="reply-note">Found in Shivneri Fresh catalog ✅</div></div>`
+    );
+  }
 });
 
 messages.addEventListener("click", (e) => {
@@ -579,12 +415,5 @@ if (messages.children.length === 0) {
     if (!messages.children.length) botText("Loading…");
   }, 500);
 }
-
-window.triggerSearch = function (term) {
-  const q = String(term || "").trim();
-  if (!q) return;
-  addMessage("user", escapeHTML(q));
-  searchProduct(q);
-};
 
 updateCheckoutBar();
