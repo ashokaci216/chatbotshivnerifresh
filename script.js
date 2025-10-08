@@ -193,6 +193,12 @@ function findLocalProduct(query) {
 }
 
 // Main chat form listener
+// Detect message language (simple check)
+function detectLanguage(text) {
+  const englishChars = text.replace(/[^a-zA-Z]/g, "").length;
+  const ratio = englishChars / text.length;
+  return ratio > 0.6 ? "english" : "hinglish";
+}
 document.getElementById("chat-form").addEventListener("submit", async (e) => {
   e.preventDefault();
   const input = document.getElementById("user-input");
@@ -204,15 +210,13 @@ document.getElementById("chat-form").addEventListener("submit", async (e) => {
 
   // 1️⃣ Check if asking for price locally
   if (checkPriceQuery(message)) {
-    const match = findLocalProduct(message);
-    if (match) {
-      addMessage(
-        "Shivneri Bot",
-        `${match.name} – ₹${match.price}. ${match.description || ""}<br>[Add to Cart]`
-      );
-      return;
-    }
+  const match = findLocalProduct(message);
+  if (match) {
+    const line = `${match.name} – ₹${match.price}. ${match.shortTip || match.description || ""}`;
+    addMessage("Shivneri Bot", line + "<br>[Add to Cart]");
+    return;
   }
+}
 
   // 2️⃣ Check if product keyword matches locally
   const match = findLocalProduct(message);
@@ -226,11 +230,18 @@ document.getElementById("chat-form").addEventListener("submit", async (e) => {
 
   // 3️⃣ Else fallback to backend API (OpenAI)
   try {
-    const res = await fetch("/api/chat", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ message }),
-    });
+    // detect language and tell the backend to reply short
+const lang = detectLanguage(message);
+const prompt =
+  lang === "english"
+    ? "Reply in short, clear English (1–2 lines only)."
+    : "Reply in short Hinglish (mix of Hindi + English, 1–2 lines only).";
+
+const res = await fetch("/api/chat", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ message: `${prompt}\n\n${message}` }),
+});
 
     const data = await res.json();
     if (data.reply) {
@@ -253,3 +264,13 @@ function addMessage(sender, text) {
   chatBox.appendChild(msgDiv);
   chatBox.scrollTop = chatBox.scrollHeight;
 }
+
+// ===== Load product list from JSON file =====
+fetch("products.json")
+  .then((res) => res.json())
+  .then((data) => {
+    window.products = data;
+    console.log("✅ Products loaded:", data.length);
+  })
+  .catch((err) => console.error("❌ Failed to load products.json:", err));
+
