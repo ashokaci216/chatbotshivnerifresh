@@ -332,14 +332,18 @@ form.addEventListener("submit", async (e) => {
 
   addMessage("user", escapeHTML(userInput));
 
-  // 1️⃣ Check local Shivneri products first
-  const matches = findMatchingProducts(userInput);
+  // 🔍 Use same Fuse.js fuzzy search as category buttons
+  const fuse = new Fuse(products, {
+    keys: ["name", "nameExpanded", "category", "canonicalBrand"],
+    threshold: 0.4,
+    ignoreLocation: true,
+    includeScore: true,
+    minMatchCharLength: 2,
+  });
 
-  if (matches.length > 0) {
-    const top = matches
-      .slice(0, 7)
-      .map(formatItemLine)
-      .join("");
+  const results = fuse.search(norm(userInput));
+  if (results.length > 0) {
+    const top = results.slice(0, 10).map(r => formatItemLine(r.item)).join("");
     addMessage(
       "bot",
       `
@@ -350,7 +354,7 @@ form.addEventListener("submit", async (e) => {
     `
     );
   } else {
-    // 2️⃣ Fallback → ask AI
+    // 🤖 Fallback → AI reply
     await callChatAPI(userInput);
   }
 
