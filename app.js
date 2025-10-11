@@ -236,19 +236,17 @@ function formatItemLine(p) {
 // ========================================================================
 function findMatchingProducts(query) {
   if (!products || !products.length) return [];
-  const q = norm(query);
 
-  return products.filter((p) => {
-    const name = norm(p.name);
-    const cat = norm(p.category);
-    const brand = norm(p.canonicalBrand || "");
-    return (
-      q.includes(name) ||
-      name.includes(q) ||
-      q.includes(brand) ||
-      q.includes(cat)
-    );
+  const fuse = new Fuse(products, {
+    keys: ["name", "nameExpanded", "category", "canonicalBrand"],
+    threshold: 0.4,
+    ignoreLocation: true,
+    includeScore: true,
+    minMatchCharLength: 2,
   });
+
+  const results = fuse.search(norm(query));
+  return results.map(r => r.item);
 }
 
 // ========================================================================
