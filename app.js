@@ -322,7 +322,7 @@ function openWhatsAppCheckout() {
   showWelcomeMessage();
 }
 
-// ===== Unified Chat Submit with Same Fuzzy Logic as Shortcuts =====
+// ===== Unified Fuzzy Search for Typed and Button Input =====
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const userInput = input.value.trim();
@@ -330,10 +330,12 @@ form.addEventListener("submit", async (e) => {
 
   addMessage("user", escapeHTML(userInput));
 
-  // 1️⃣ Use same helper as shortcut buttons
-  const matches = findMatchingProducts(userInput);
+  // 1️⃣ Normalize query for case-insensitive and typo-friendly search
+  const query = norm(userInput);
 
-  // 2️⃣ If we found products locally → show top 7–10
+  // 2️⃣ Use the same fuzzy helper used by shortcut buttons
+  const matches = findMatchingProducts(query);
+
   if (matches.length > 0) {
     const unique = [];
     const top = matches
@@ -348,10 +350,13 @@ form.addEventListener("submit", async (e) => {
 
     addMessage(
       "bot",
-      `<div class="reply-block">${top}<div class="reply-note">Found in Shivneri Fresh catalog ✅</div></div>`
+      `<div class="reply-block">
+        ${top}
+        <div class="reply-note">Found in Shivneri Fresh catalog ✅</div>
+      </div>`
     );
   } else {
-    // 3️⃣ Only if no local match → fallback to AI
+    // 3️⃣ If no local match → fallback to AI
     await callChatAPI(userInput);
   }
 
