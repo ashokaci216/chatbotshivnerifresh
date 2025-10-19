@@ -322,9 +322,7 @@ function openWhatsAppCheckout() {
   showWelcomeMessage();
 }
 
-// ========================================================================
-// ==== ✉️ Events ====
-// ========================================================================
+// ===== Unified Chat Submit with Same Fuzzy Logic as Shortcuts =====
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const userInput = input.value.trim();
@@ -332,29 +330,28 @@ form.addEventListener("submit", async (e) => {
 
   addMessage("user", escapeHTML(userInput));
 
-  // 🔍 Use same Fuse.js fuzzy search as category buttons
-  const fuse = new Fuse(products, {
-    keys: ["name", "nameExpanded", "category", "canonicalBrand"],
-    threshold: 0.4,
-    ignoreLocation: true,
-    includeScore: true,
-    minMatchCharLength: 2,
-  });
+  // 1️⃣ Use same helper as shortcut buttons
+  const matches = findMatchingProducts(userInput);
 
-  const results = fuse.search(norm(userInput));
-  if (results.length > 0) {
-    const top = results.slice(0, 10).map(r => formatItemLine(r.item)).join("");
+  // 2️⃣ If we found products locally → show top 7–10
+  if (matches.length > 0) {
+    const unique = [];
+    const top = matches
+      .filter((p) => {
+        if (unique.includes(p.name)) return false;
+        unique.push(p.name);
+        return true;
+      })
+      .slice(0, 10)
+      .map(formatItemLine)
+      .join("");
+
     addMessage(
       "bot",
-      `
-      <div class="reply-block">
-        ${top}
-        <div class="reply-note">Found in Shivneri Fresh catalog ✅</div>
-      </div>
-    `
+      `<div class="reply-block">${top}<div class="reply-note">Found in Shivneri Fresh catalog ✅</div></div>`
     );
   } else {
-    // 🤖 Fallback → AI reply
+    // 3️⃣ Only if no local match → fallback to AI
     await callChatAPI(userInput);
   }
 
