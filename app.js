@@ -322,7 +322,7 @@ function openWhatsAppCheckout() {
   showWelcomeMessage();
 }
 
-// ===== Unified Fuzzy Search for Typed and Button Input =====
+// ===== Unified Fuzzy Search for Typed and Button Input (Multi-Result Format) =====
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const userInput = input.value.trim();
@@ -330,12 +330,13 @@ form.addEventListener("submit", async (e) => {
 
   addMessage("user", escapeHTML(userInput));
 
-  // 1️⃣ Normalize query for case-insensitive and typo-friendly search
+  // 1️⃣ Normalize for case-insensitive search
   const query = norm(userInput);
 
-  // 2️⃣ Use the same fuzzy helper used by shortcut buttons
+  // 2️⃣ Fuzzy search (same logic as shortcut buttons)
   const matches = findMatchingProducts(query);
 
+  // 3️⃣ Show 5–7 matching products in proper format
   if (matches.length > 0) {
     const unique = [];
     const top = matches
@@ -344,19 +345,19 @@ form.addEventListener("submit", async (e) => {
         unique.push(p.name);
         return true;
       })
-      .slice(0, 10)
-      .map(formatItemLine)
+      .slice(0, 7)
+      .map(formatItemLine) // same card layout as button results
       .join("");
 
     addMessage(
       "bot",
       `<div class="reply-block">
-        ${top}
-        <div class="reply-note">Found in Shivneri Fresh catalog ✅</div>
-      </div>`
+         ${top}
+         <div class="reply-note">Found in Shivneri Fresh catalog ✅</div>
+       </div>`
     );
   } else {
-    // 3️⃣ If no local match → fallback to AI
+    // 4️⃣ Only if no local match → AI fallback
     await callChatAPI(userInput);
   }
 
