@@ -192,70 +192,36 @@ function findLocalProduct(query) {
   return res.length ? res[0].item : null;
 }
 
-// Main chat form listener
-// Detect message language (simple check)
+// ===== Unified Shivneri Chat Form Handler =====
+
+// Detect message language (kept for future AI replies, not used here)
 function detectLanguage(text) {
   const englishChars = text.replace(/[^a-zA-Z]/g, "").length;
   const ratio = englishChars / text.length;
   return ratio > 0.6 ? "english" : "hinglish";
 }
-document.getElementById("chat-form").addEventListener("submit", async (e) => {
+
+// Listen to the chat form submit and delegate search logic to app.js
+document.getElementById("chat-form").addEventListener("submit", (e) => {
   e.preventDefault();
+
   const input = document.getElementById("user-input");
   const message = input.value.trim();
   if (!message) return;
 
+  // Display user message
   addMessage("You", message);
+
+  // 🔁 Forward search query to unified fuzzy search in app.js
+  window.dispatchEvent(
+    new CustomEvent("shivneriSearch", { detail: message })
+  );
+
+  // Clear input field
   input.value = "";
-
-  // 1️⃣ Check if asking for price locally
-  if (checkPriceQuery(message)) {
-  const match = findLocalProduct(message);
-  if (match) {
-    const line = `${match.name} – ₹${match.price}. ${match.shortTip || match.description || ""}`;
-    addMessage("Shivneri Bot", line + "<br>[Add to Cart]");
-    return;
-  }
-}
-
-  // 2️⃣ Check if product keyword matches locally
-  const match = findLocalProduct(message);
-  if (match) {
-    addMessage(
-      "Shivneri Bot",
-      `${match.name} – ₹${match.price}. ${match.description || ""}<br>[Add to Cart]`
-    );
-    return;
-  }
-
-  // 3️⃣ Else fallback to backend API (OpenAI)
-  try {
-    // detect language and tell the backend to reply short
-const lang = detectLanguage(message);
-const prompt =
-  lang === "english"
-    ? "Reply in short, clear English (1–2 lines only)."
-    : "Reply in short Hinglish (mix of Hindi + English, 1–2 lines only).";
-
-const res = await fetch("/api/chat", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ message: `${prompt}\n\n${message}` }),
 });
 
-    const data = await res.json();
-    if (data.reply) {
-      addMessage("Shivneri Bot", data.reply);
-    } else {
-      addMessage("Shivneri Bot", "Sorry, I didn’t get that.");
-    }
-  } catch (err) {
-    console.error("Chat error:", err);
-    addMessage("Shivneri Bot", "⚠️ Server error, please try again later.");
-  }
-});
-
-// Add message to chat window
+// ===== Add message to chat window =====
 function addMessage(sender, text) {
   const chatBox = document.getElementById("messages");
   const msgDiv = document.createElement("div");
@@ -273,4 +239,3 @@ fetch("products.json")
     console.log("✅ Products loaded:", data.length);
   })
   .catch((err) => console.error("❌ Failed to load products.json:", err));
-

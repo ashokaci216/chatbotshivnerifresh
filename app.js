@@ -421,4 +421,45 @@ if (messages.children.length === 0) {
   }, 500);
 }
 
+// ===== Listen for search requests coming from script.js =====
+window.addEventListener("shivneriSearch", async (e) => {
+  const userInput = e.detail;
+  if (!userInput) return;
+
+  addMessage("user", escapeHTML(userInput));
+
+  // Use same fuzzy search logic as button clicks
+  const matches = findMatchingProducts(userInput);
+
+  if (matches && matches.length > 0) {
+    const shown = [];
+    const top = matches
+      .filter((p) => {
+        if (shown.includes(p.name)) return false;
+        shown.push(p.name);
+        return true;
+      })
+      .slice(0, 7) // show top 7 relevant items
+      .map(formatItemLine)
+      .join("");
+
+    addMessage(
+      "bot",
+      `
+      <div class="reply-block">
+        ${top}
+        <div class="reply-note">Found in Shivneri Fresh catalog ✅</div>
+      </div>
+    `
+    );
+  } else {
+    // fallback → AI response if no match found
+    try {
+      await callChatAPI(userInput);
+    } catch (err) {
+      botText("⚠️ Server error, please try again later.");
+    }
+  }
+});
+
 updateCheckoutBar();
