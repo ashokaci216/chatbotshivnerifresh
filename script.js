@@ -192,16 +192,21 @@ function findLocalProduct(query) {
   return res.length ? res[0].item : null;
 }
 
-// ===== Unified Shivneri Chat Form Handler =====
+/* =========================================
+   SHIVNERI FRESH CHATBOT (Updated Language Logic)
+   ========================================= */
 
-// Detect message language (kept for future AI replies, not used here)
+// ===== Detect Language (English / Hindi / Hinglish) =====
 function detectLanguage(text) {
-  const englishChars = text.replace(/[^a-zA-Z]/g, "").length;
-  const ratio = englishChars / text.length;
-  return ratio > 0.6 ? "english" : "hinglish";
+  const hindiPattern = /[अ-ह]/; // Pure Hindi letters
+  const hinglishPattern = /\b(ka|hai|nahi|acha|kya|tum|mera|tera|aap|main|hun|batao)\b/i;
+
+  if (hindiPattern.test(text)) return "hindi";
+  if (hinglishPattern.test(text)) return "hinglish";
+  return "english"; // ✅ Default to English
 }
 
-// Listen to the chat form submit and delegate search logic to app.js
+// ===== Unified Shivneri Chat Form Handler =====
 document.getElementById("chat-form").addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -209,12 +214,16 @@ document.getElementById("chat-form").addEventListener("submit", (e) => {
   const message = input.value.trim();
   if (!message) return;
 
+  // 🧠 Detect user input language
+  const lang = detectLanguage(message);
+  console.log("Detected language:", lang);
+
   // Display user message
   addMessage("You", message);
 
-  // 🔁 Forward search query to unified fuzzy search in app.js
+  // 🔁 Forward query + language to unified fuzzy search in app.js
   window.dispatchEvent(
-    new CustomEvent("shivneriSearch", { detail: message })
+    new CustomEvent("shivneriSearch", { detail: { message, lang } })
   );
 
   // Clear input field
