@@ -452,6 +452,13 @@ window.addEventListener("shivneriSearch", async (e) => {
 
   addMessage("user", escapeHTML(userInput));
 
+  // Always use AI when message contains "recipe" or common misspelling "receipe"
+  const lower = userInput.toLowerCase();
+  if (lower.includes("recipe") || lower.includes("receipe")) {
+    await callChatAPI(userInput);
+    return; // Skip product search
+  }
+
   // Use same fuzzy search logic as button clicks
   const matches = findMatchingProducts(userInput);
 
@@ -474,10 +481,10 @@ window.addEventListener("shivneriSearch", async (e) => {
         ${top}
         <div class="reply-note">Found in Shivneri Fresh catalog ✅</div>
       </div>
-    `
+      `
     );
   } else {
-    // fallback → AI response if no match found
+    // Fallback → AI response if no match found
     try {
       await callChatAPI(userInput);
     } catch (err) {
