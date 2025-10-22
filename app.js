@@ -96,9 +96,14 @@ function addMessage(sender, html) {
   messages.scrollTop = messages.scrollHeight;
   showClearIfNeeded();
 }
-
+// 🟢 For normal plain bot replies (safe)
 function botText(text) {
   addMessage("bot", `<p>${escapeHTML(text)}</p>`);
+}
+
+// 🟢 For styled bot replies (like welcome message)
+function botHTML(html) {
+  addMessage("bot", html);
 }
 
 function showWelcomeMessage() {
@@ -108,13 +113,24 @@ function showWelcomeMessage() {
   else if (hour < 17) greeting = "Good Afternoon! Welcome to Shivneri Fresh!";
   else greeting = "Good Evening! Welcome to Shivneri Fresh!";
 
-  botText(greeting);
-  botText(
-    'Search by product, brand, or category. Try: “Amul Mozzarella”, “French Fries”, “Tomato Ketchup”.'
-  );
-  botText(
-    'Need help deciding? Ask for items by category like “noodles”, “mayo”, or “olives”.'
-  );
+  // 🌿 Styled Welcome Messages
+  botHTML(`<p><strong>🌿 ${greeting}</strong></p>`);
+
+  botHTML(`
+    <p>Search by product, brand, or category.<br>
+    <span class="tip-text">Try:</span>
+    <strong class="suggest">“Derista Cheese”</strong>,
+    <strong class="suggest">“Wingreen Mayo”</strong>,
+    <strong class="suggest">“French Fries”</strong>.</p>
+  `);
+
+  // 🍳 Chef-style Recipe Section
+  botHTML(`
+  <p>🍳 Craving something tasty?<br>
+  Just type 
+  <strong class="suggest">“Fried Rice recipe”</strong> or 
+  <strong class="suggest">“Pasta recipe”</strong>.</p>
+`);
 }
 
 // ========================================================================
@@ -330,13 +346,21 @@ form.addEventListener("submit", async (e) => {
 
   addMessage("user", escapeHTML(userInput));
 
+  // 🧠 Always use AI when message contains "recipe" or "receipe"
+  const lower = userInput.toLowerCase();
+  if (lower.includes("recipe") || lower.includes("receipe")) {
+    await callChatAPI(userInput);
+    input.value = "";
+    return; // ✅ Skip product search completely
+  }
+
   // 1️⃣ Normalize for case-insensitive search
   const query = norm(userInput);
 
-  // 2️⃣ Fuzzy search (same logic as shortcut buttons)
+  // 2️⃣ Search locally in products.json
   const matches = findMatchingProducts(query);
 
-  // 3️⃣ Show 5–7 matching products in proper format
+  // 3️⃣ If found → show product cards
   if (matches.length > 0) {
     const unique = [];
     const top = matches
@@ -346,7 +370,7 @@ form.addEventListener("submit", async (e) => {
         return true;
       })
       .slice(0, 7)
-      .map(formatItemLine) // same card layout as button results
+      .map(formatItemLine)
       .join("");
 
     addMessage(
@@ -357,7 +381,7 @@ form.addEventListener("submit", async (e) => {
        </div>`
     );
   } else {
-    // 4️⃣ Only if no local match → AI fallback
+    // 4️⃣ Otherwise → fallback to AI
     await callChatAPI(userInput);
   }
 
