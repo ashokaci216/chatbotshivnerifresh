@@ -1,4 +1,4 @@
-// ===== SHIVNERI FRESH CHATBOT (Product + Recipe) =====
+// ===== SHIVNERI FRESH CHATBOT (Product + Recipe + AI Fallback) =====
 
 // Detect language (future Hinglish option)
 function detectLanguage(text) {
@@ -38,7 +38,21 @@ function handleUserMessage(message) {
     showRecipe(message);
   } 
   else {
-    addMessage("Bot", "🤖 I can help you with *Shivneri Fresh products* and *simple recipes!* Try typing:\n- 'Wingreens Mayonnaise'\n- 'How to make Schezwan Fried Rice'");
+    // 🌐 Fallback to OpenAI backend
+    addMessage("Bot", "⌛ Please wait, checking for your query...");
+    fetch("/api/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.reply) addMessage("Bot", data.reply);
+        else addMessage("Bot", "🤖 Sorry, no reply found right now.");
+      })
+      .catch(() => {
+        addMessage("Bot", "⚠️ Unable to connect to the server. Please try again later.");
+      });
   }
 }
 
