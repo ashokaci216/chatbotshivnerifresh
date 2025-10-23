@@ -389,11 +389,16 @@ form.addEventListener("submit", async (e) => {
 });
 
 // ========================================================================
-// ==== 🧠 AI Chat API ====
+// ==== 🧠 AI Chat API (Auto-detect GitHub or Vercel) ====
 // ========================================================================
 async function callChatAPI(userInput) {
   try {
-    const res = await fetch("/api/chat", {
+    // Detect correct API base (use Vercel endpoint if opened from GitHub Pages)
+    const apiBase = window.location.hostname.includes("github.io")
+      ? "https://chatbotshivnerifresh.vercel.app"
+      : "";
+
+    const res = await fetch(`${apiBase}/api/chat`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: userInput }),
