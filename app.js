@@ -72,6 +72,20 @@ function showClearIfNeeded() {
   if (messages.children.length >= 2) clearBtn.classList.remove("hidden");
 }
 
+// ===== Product Keywords for Intent Detection (Option A) =====
+const PRODUCT_KEYWORDS = [
+  "fries","french","mayo","mayonnaise","cheese","mozzarella","slice","paneer",
+  "ketchup","sauce","tikki","burger","pasta","olive","olives","nuggets","wrap",
+  "derista","amul","wingreens","gc","golden","crown","hyfun","batter","cream",
+  "poppers","dressing","chips","rice","vinegar","noodles","soup","butter",
+  "corn","nachos","tortilla","oregano","periperi","peri","chips","spread"
+];
+
+function looksLikeProductQuery(text) {
+  const q = norm(text);
+  return PRODUCT_KEYWORDS.some((k) => q.includes(k));
+}
+
 // ---- Tips ----
 const CATEGORY_TIPS = {
   CHEESE: "Good for pizza, pasta, or sandwiches.",
@@ -96,12 +110,13 @@ function addMessage(sender, html) {
   messages.scrollTop = messages.scrollHeight;
   showClearIfNeeded();
 }
-// 🟢 For normal plain bot replies (safe)
+
+// For normal plain bot replies (safe)
 function botText(text) {
   addMessage("bot", `<p>${escapeHTML(text)}</p>`);
 }
 
-// 🟢 For styled bot replies (like welcome message)
+// For styled bot replies (like welcome message)
 function botHTML(html) {
   addMessage("bot", html);
 }
@@ -113,24 +128,23 @@ function showWelcomeMessage() {
   else if (hour < 17) greeting = "Good Afternoon! Welcome to Shivneri Fresh!";
   else greeting = "Good Evening! Welcome to Shivneri Fresh!";
 
-  // 🌿 Styled Welcome Messages
+  // Styled Welcome Messages
   botHTML(`<p><strong>🌿 ${greeting}</strong></p>`);
 
   botHTML(`
     <p>Search by product, brand, or category.<br>
     <span class="tip-text">Try:</span>
-    <strong class="suggest">“Derista Cheese”</strong>,
+    <strong class="suggest">“Derista”</strong>,
     <strong class="suggest">“Wingreen Mayo”</strong>,
     <strong class="suggest">“French Fries”</strong>.</p>
   `);
 
-  // 🍳 Chef-style Recipe Section
   botHTML(`
-  <p>🍳 Craving something tasty?<br>
-  Just type 
-  <strong class="suggest">“Fried Rice recipe”</strong> or 
-  <strong class="suggest">“Pasta recipe”</strong>.</p>
-`);
+    <p>🍳 Craving something tasty?<br>
+    Just type <em class="suggest">“recipe”</em> — like 
+    <strong class="suggest">“Fried Rice recipe”</strong> or 
+    <strong class="suggest">“Pasta recipe”</strong>.</p>
+  `);
 }
 
 // ========================================================================
@@ -208,7 +222,7 @@ function setupProducts(data) {
   });
 
   fuse = new Fuse(products, {
-    keys: ["name", "brand", "category"],
+    keys: ["name", "nameExpanded", "category", "canonicalBrand"],
     threshold: 0.45,
     ignoreLocation: true,
     includeScore: true,
@@ -262,7 +276,7 @@ function findMatchingProducts(query) {
   });
 
   const results = fuse.search(norm(query));
-  return results.map(r => r.item);
+  return results.map((r) => r.item);
 }
 
 // ========================================================================
@@ -346,21 +360,28 @@ form.addEventListener("submit", async (e) => {
 
   addMessage("user", escapeHTML(userInput));
 
-  // 🧠 Always use AI when message contains "recipe" or "receipe"
+  // 🧠 NEW: Always use AI when message contains "recipe" or "receipe"
   const lower = userInput.toLowerCase();
   if (lower.includes("recipe") || lower.includes("receipe")) {
     await callChatAPI(userInput);
     input.value = "";
-    return; // ✅ Skip product search completely
+    return; // ✅ Skip product search
   }
 
   // 1️⃣ Normalize for case-insensitive search
   const query = norm(userInput);
 
-  // 2️⃣ Search locally in products.json
+  // 🧠 OPTION A — block search unless it's a real product query
+  if (!looksLikeProductQuery(userInput)) {
+    botText("I can help you check product rates. Try “Fries”, “Mayo”, or “Mozzarella”.");
+    input.value = "";
+    return;
+  }
+
+  // 2️⃣ Fuzzy search (only runs if product intent detected)
   const matches = findMatchingProducts(query);
 
-  // 3️⃣ If found → show product cards
+  // 3️⃣ Show results (5–7 items)
   if (matches.length > 0) {
     const unique = [];
     const top = matches
@@ -381,13 +402,11 @@ form.addEventListener("submit", async (e) => {
        </div>`
     );
   } else {
-    // 4️⃣ Otherwise → fallback to AI
-    await callChatAPI(userInput);
+    await callChatAPI(userInput); // fallback
   }
 
   input.value = "";
 });
-
 
 // ========================================================================
 // ==== 🧠 AI Chat API ====
@@ -453,11 +472,10 @@ window.addEventListener("shivneriSearch", async (e) => {
 
   addMessage("user", escapeHTML(userInput));
 
-  // Always use AI when message contains "recipe" or common misspelling "receipe"
-  const lower = userInput.toLowerCase();
-  if (lower.includes("recipe") || lower.includes("receipe")) {
-    await callChatAPI(userInput);
-    return; // Skip product search
+  // 🧠 OPTION A — block search unless it's a real product query
+  if (!looksLikeProductQuery(userInput)) {
+    botText("I can help you check product rates. Try “Fries”, “Mayo”, or “Mozzarella”.");
+    return;
   }
 
   // Use same fuzzy search logic as button clicks
@@ -482,10 +500,10 @@ window.addEventListener("shivneriSearch", async (e) => {
         ${top}
         <div class="reply-note">Found in Shivneri Fresh catalog ✅</div>
       </div>
-      `
+    `
     );
   } else {
-    // Fallback → AI response if no match found
+    // fallback → AI response if no match found
     try {
       await callChatAPI(userInput);
     } catch (err) {
