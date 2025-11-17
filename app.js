@@ -223,7 +223,7 @@ function setupProducts(data) {
 
   fuse = new Fuse(products, {
     keys: ["name", "nameExpanded", "category", "canonicalBrand"],
-    threshold: 0.45,
+    threshold: 0.6,
     ignoreLocation: true,
     includeScore: true,
     minMatchCharLength: 2,
